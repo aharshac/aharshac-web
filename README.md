@@ -1,4 +1,4 @@
-# My static website
+# My static websitez
 
 ## Install dependencies
 
