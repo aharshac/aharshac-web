@@ -1,0 +1,17 @@
+.emoji {
+  font-size: 1em;
+  height: 1.6em;
+  width: 1.2em;
+  vertical-align: bottom;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  font-family: "Lato", "Lucida Grande", "Lucida Sans Unicode", "Apple Color Emoji", Tahoma, Sans-Serif;
+  letter-spacing: normal;
+
+  & > img {
+    height: 1.1em;
+    width: 1.1em;
+  }
+}

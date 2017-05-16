@@ -1,0 +1,62 @@
+.cover {
+  position: absolute;
+  top: 50%;
+  margin: auto;
+  text-align: center;
+  z-index: 10;
+  transform: translateY(-50%);
+  width: 100%;
+
+  & > .avatar {
+    height: 150px;
+    width: 150px;
+    border-radius: 30%;
+    display: block;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, .16), 0 3px 6px rgba(0, 0, 0, .23);
+    position: relative !important;
+
+    @media (--mobile) {
+      height: 100px;
+      width: 100px;
+    }
+  }
+
+  & > .text {
+    display: block;
+    font-size: 2rem;
+    color: var(--colorNeutralLight);
+    text-shadow: 0 0 10px var(--colorPrimaryDark), 0 0 6px var(--colorNeutralDark), 0 0 2px var(--colorNeutralDark);
+    margin: 10px;
+
+    @media (--mobile) {
+      font-size: 1.3rem;
+    }
+  }
+
+  & > .buttonGroup {
+    font-size: 1rem;
+    display: block;
+    text-shadow: none;
+  }
+}
+
+
+.container {
+  width: 100%;
+  background-color: #fff;
+  position: relative;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  padding: 2em 5em;
+  box-sizing: border-box;
+  max-width: var(--maxWidth);
+
+  @media (--mobile) {
+    padding: 20px;
+  }
+}
+
+section {
+  padding-bottom: 10px;
+}
