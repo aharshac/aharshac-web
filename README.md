@@ -1,4 +1,4 @@
-# [Phenomic](https://github.com/MoOx/phenomic) phenomic-theme-base
+# My static website
 
 ## Install dependencies
 

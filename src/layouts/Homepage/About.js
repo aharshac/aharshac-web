@@ -34,7 +34,7 @@ const About = () => (
     <p>
       My short term goal is to do Master's <Emoji text="school"/> in Mechatronics from a reputed university <Emoji text="mag"/>.
       In the long term, I'd like to start my own precision manufacturing company <Emoji text="factory"/> and
-      provide employment to many people <Emoji text="family_man_woman_girl_boy"/>.
+      provide employment to many people. <Emoji text="fast_forward"/>
     </p>
   </section>
 );

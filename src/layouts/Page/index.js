@@ -22,6 +22,7 @@ const Page = (
     header,
     footer,
     children,
+    noHero,
   },
   {
     metadata: { networks: { twitter_id } },
@@ -33,6 +34,8 @@ const Page = (
   )
 
   const metaTitle = head.metaTitle ? head.metaTitle : head.title
+
+  const showHeader = !(head.noHero || noHero);
 
   const socialImage = head.hero && head.hero.match("://") ? head.hero
     : joinUri(process.env.PHENOMIC_USER_URL, head.hero)
@@ -66,7 +69,7 @@ const Page = (
             background: `#111 url(${ head.hero }) 50% 50% / cover`,
           }}
         >*/}
-      { !head.noHero &&
+      { showHeader &&
         <ProgressiveImage
           src={head.hero || cover}
           responsive={head.hero ? undefined : coverResponsive}
@@ -113,6 +116,7 @@ Page.propTypes = {
   body: PropTypes.string,
   header: PropTypes.element,
   footer: PropTypes.element,
+  noHero: PropTypes.bool,
 }
 
 Page.contextTypes = {

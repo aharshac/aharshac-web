@@ -1,7 +1,7 @@
 {
   "private": true,
   "name": "aharshac-web",
-  "homepage": "https://aharshac.github.io",
+  "homepage": "https://alvaharsha.me/",
   "repository": "https://github.com/aharshac/aharshac.github.io.git",
   "scripts": {
     "lint:js": "eslint --ignore-path .gitignore --fix .",
@@ -10,10 +10,12 @@
     "start": "phenomic start",
     "build": "phenomic build",
     "pretest": "npm run lint",
-    "test": "npm run build"
+    "test": "npm run build",
+    "predeploy": "npm run build",
+    "deploy": "deploy.cmd"
   },
   "phenomic": {
-    "CNAME": false
+    "CNAME": true
   },
   "#babel": "webpack-(development|production) are useful for webpack 2, otherwise use development|production",
   "babel": {
