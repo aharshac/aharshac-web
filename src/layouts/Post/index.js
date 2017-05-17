@@ -4,6 +4,7 @@ import warning from "warning"
 import { BodyContainer, joinUri, Link } from "phenomic"
 
 import Loading from "../../components/Loading"
+import Category from "../../components/Category"
 import styles from "./index.css"
 
 const Post = (
@@ -29,6 +30,7 @@ const Post = (
     : joinUri(process.env.PHENOMIC_USER_URL, head.hero)
 
   const cizm_path = head.cizm_path;
+  const category = head.category;
   const description = head.description;
 
   const meta = [
@@ -73,6 +75,10 @@ const Post = (
               {
                 cizm_path &&
                 <div>
+                  {
+                    category &&
+                    <Category text={category} />
+                  }
 
                   <div className={ styles.cizmLink }>
                     This excerpt is auto-generated from a thread hosted on
@@ -83,8 +89,8 @@ const Post = (
 
                   <div className={ styles.cizmExcerpt }> {description} </div>
 
-                  <div className={ styles.cizmLink }>
-                    Read more at
+                  <div className={ styles.cizmLink + " " + styles.cizmThread }>
+                    Read more and join the conversation at
                     <Link to={ cizm_path } className={ styles.readMore }>
                       { cizm_path }
                     </Link>

@@ -2,10 +2,11 @@ import React, { PropTypes } from "react"
 import { Link } from "phenomic"
 
 import Button from "../../components/Button"
+import Category from "../../components/Category"
 
 import styles from "./index.css"
 
-const PagePreview = ({ __url, title, date, description }) => {
+const PagePreview = ({ __url, title, date, description, category }) => {
   const pageDate = date ? new Date(date) : null
   const url = __url;
 
@@ -23,6 +24,8 @@ const PagePreview = ({ __url, title, date, description }) => {
         }
       </div>
       <div className={ styles.description }>
+
+        { category && <div className={ styles.category } ><Category text={category} /></div> }
         { description }
         { " " }
       </div>
@@ -39,6 +42,7 @@ PagePreview.propTypes = {
   date: PropTypes.string,
   description: PropTypes.string,
   cizm_path: PropTypes.string,
+  category: PropTypes.string,
 }
 
 export default PagePreview
