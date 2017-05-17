@@ -8,11 +8,11 @@ import Education from "./Education"
 import WorkExperience from "./WorkExperience"
 import Skills from "./Skills"
 import Interests from "./Interests"
-import LatestPosts from "../../components/LatestPosts"
+import Feed from "./Feed"
 import styles from "./index.css"
 
 import metadata from '../../metadata'
-const { pkg, description, title, avatar, networks:{ twitter_id } } = metadata
+const { pkg, description, title, avatar, networks:{ twitter_id, blog } } = metadata
 
 const meta = [
   { property: "og:type", content: "article" },
@@ -50,7 +50,7 @@ const Homepage = () => {
         <Work/>
         */}
 
-        <LatestPosts/>
+        <Feed url={blog} />
 
       </div>
     </div>

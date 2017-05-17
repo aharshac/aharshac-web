@@ -8,6 +8,8 @@ import PhenomicLoaderFeedWebpackPlugin
 import PhenomicLoaderSitemapWebpackPlugin
   from "phenomic/lib/loader-sitemap-webpack-plugin"
 
+import { collaborizm_plugins } from './collaborizm_plugins';
+
 import pkg from "./package.json"
 
 export default (config = {}) => {
@@ -109,7 +111,7 @@ export default (config = {}) => {
         // *.global.css => global (normal) css
         {
           test: /\.global\.css$/,
-          include: path.resolve(__dirname, "src"),
+          include: path.resolve(config.cwd, "src"),
           loader: ExtractTextPlugin.extract({
             fallback: "style-loader",
             use: [
@@ -175,6 +177,29 @@ export default (config = {}) => {
           loader: "raw-loader",
 
         },
+
+        {
+          /*
+          test: /\.(czd|czp)$/,
+          use: [{
+            loader: 'debug-loader'
+          }, {
+            loader: phenomicLoader,
+            options: {
+              query: {
+                context: path.join(__dirname, config.source),
+                plugins: collaborizm_plugins,
+              }
+            }
+          }],
+          */
+          test: /\.(czd|czp)$/,
+          loader: phenomicLoader,
+          query: {
+            context: path.join(__dirname, config.source),
+            plugins: collaborizm_plugins,
+          },
+        },
       ],
     },
 
@@ -237,6 +262,6 @@ export default (config = {}) => {
       filename: "[name].[hash].js",
     },
 
-    resolve: { extensions: [ ".js", ".json" ] },
+    resolve: { extensions: [ ".js", ".json", ".czd" ] },
   }
 }

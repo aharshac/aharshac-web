@@ -1,7 +1,7 @@
 import React, { PropTypes } from "react"
 import Helmet from "react-helmet"
 import warning from "warning"
-import { BodyContainer, joinUri } from "phenomic"
+import { BodyContainer, joinUri, Link } from "phenomic"
 
 import Loading from "../../components/Loading"
 import styles from "./index.css"
@@ -28,6 +28,9 @@ const Post = (
   const socialImage = head.hero && head.hero.match("://") ? head.hero
     : joinUri(process.env.PHENOMIC_USER_URL, head.hero)
 
+  const cizm_path = head.cizm_path;
+  const description = head.description;
+
   const meta = [
     { property: "og:type", content: "article" },
     { property: "og:title", content: metaTitle },
@@ -36,13 +39,13 @@ const Post = (
       content: joinUri(process.env.PHENOMIC_USER_URL, __url),
     },
     { property: "og:image", content: socialImage },
-    { property: "og:description", content: head.description },
+    { property: "og:description", content: description },
     { name: "twitter:card", content: "summary" },
     { name: "twitter:title", content: metaTitle },
     { name: "twitter:creator", content: `@${ twitter_id }` },
-    { name: "twitter:description", content: head.description },
+    { name: "twitter:description", content: description },
     { name: "twitter:image", content: socialImage },
-    { name: "description", content: head.description },
+    { name: "description", content: description },
   ]
 
   const pageDate = head.date ? new Date(head.date) : null;
@@ -67,7 +70,29 @@ const Post = (
             isLoading
             ? <Loading /> :
             <BodyContainer>
-              { hero &&
+              {
+                cizm_path &&
+                <div>
+
+                  <div className={ styles.cizmLink }>
+                    This excerpt is auto-generated from a thread hosted on
+                    <Link to="https://www.collaborizm.com/" className={ styles.readMore + " " + styles.collaborizm }>
+                      Collaborizm.com
+                    </Link>
+                  </div>
+
+                  <div className={ styles.cizmExcerpt }> {description} </div>
+
+                  <div className={ styles.cizmLink }>
+                    Read more at
+                    <Link to={ cizm_path } className={ styles.readMore }>
+                      { cizm_path }
+                    </Link>
+                  </div>
+                </div>
+              }
+              {
+                hero &&
                 <img src={ hero } alt={ head.title } className={ styles.hero } />
               }
               { body }

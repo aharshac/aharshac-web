@@ -86,3 +86,24 @@
     margin-bottom: 0.2em;
   }
 }
+
+.readMore {
+  margin-left: 10px;
+}
+
+.cizmLink {
+  padding: 1em 0;
+  font-size: 0.95em;
+  opacity: 0.9;
+}
+
+.cizmExcerpt {
+  padding: 1em;
+  background: #ddd;
+  border: 2px solid #ccc;
+  font-style: oblique;
+}
+
+.collaborizm {
+  font-weight: 900;
+}

@@ -5,7 +5,7 @@
   "repository": "https://github.com/aharshac/aharshac.github.io.git",
   "collaborizm_id": "Hyt3y6XK",
   "scripts": {
-    "collaborizm": "babel-node -- ./collaborizm/index.js",
+    "collaborizm": "babel-node -- ./collaborizm_importer/index.js",
     "lint:js": "eslint --ignore-path .gitignore --fix .",
     "lint:css": "stylelint \"src/**/*.css\"",
     "lint": "npm-run-all --parallel lint:*",
@@ -104,6 +104,7 @@
     "babel-preset-stage-2": "^6.22.0",
     "classnames": "^2.2.5",
     "css-loader": "^0.28.0",
+    "debug-loader": "0.0.1",
     "emoji-name-map": "^1.2.4",
     "emoji-unicode": "^1.0.6",
     "eslint": "^3.7.1",

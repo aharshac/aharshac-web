@@ -1,17 +1,41 @@
 import request from 'request';
+import remark from "remark"
+import stripMd from "strip-markdown"
+
+import prune from './prune';
+
+const getDesc = (text) => {
+  return prune(
+    remark()
+      .use(stripMd)
+      .process(text)
+      .toString()
+      .replace(/\n+/g, " ") // Avoid useless new lines
+      .trim()
+    ,
+    140,
+    "…"
+  );
+}
 
 const formatThread = (thread, collaborizm_id) => {
   if (!thread) return false;
   const { category, createdOn, text, title, item, itemType, type, id } = thread;
 
+  if ( !category || !createdOn || !text || !title || !item || !itemType || !type || !id ) return;
   if (item !== collaborizm_id || itemType !== "user" || type !== "discussion") return false;
+
+  let route = title.trim().replace(/[^\w\s\-]/g, '').replace(/[\s]+/g, '-').toLowerCase();
+  route = route ? `blog/${route}.md` : null;
   return {
-    id,
-    path: `https://www.collaborizm.com/thread/${id}`,
+    cizm_thread_id: id,
+    cizm_path: `https://www.collaborizm.com/thread/${id}`,
     category,
     date: createdOn,
-    text,
+    description: getDesc(text),
     title,
+    route,
+    layout: 'Post',
   }
 };
 
