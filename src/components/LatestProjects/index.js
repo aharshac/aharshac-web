@@ -1,15 +1,15 @@
 import React, { PropTypes } from "react"
 import enhanceCollection from "phenomic/lib/enhance-collection"
 
-import PagesList from "../../components/PagesList"
+import ProjectsList from "../../components/ProjectsList"
 
 // import styles from "./index.css"
 
 const defaultNumberOfPosts = 6
 
 const LatestPosts = (props, { collection }) => {
-  const latestPosts = enhanceCollection(collection, {
-    filter: { layout: "Post" },
+  const latestProjects = enhanceCollection(collection, {
+    filter: { layout: "Project" },
     sort: "date",
     reverse: true,
   })
@@ -17,10 +17,7 @@ const LatestPosts = (props, { collection }) => {
 
   return (
     <div>
-      {/* <h1 className={ styles.latestPosts }>
-        { "Latest Posts" }
-      </h1> */}
-      <PagesList pages={ latestPosts } />
+      <ProjectsList projects={ latestProjects } />
     </div>
   )
 }

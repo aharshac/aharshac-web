@@ -5,12 +5,13 @@ import { BodyContainer, joinUri, Link } from "phenomic"
 
 import Loading from "../../components/Loading"
 import Category from "../../components/Category"
+import Button from "../../components/Button"
 import styles from "./index.css"
 
 import "../../styles/content.css"
 import "../../styles/table.css"
 
-const Post = (
+const Project = (
   {
     isLoading,
     __filename,
@@ -53,24 +54,33 @@ const Post = (
     { name: "description", content: description },
   ]
 
-  const pageDate = head.date ? new Date(head.date) : null;
-  const hero = head.hero ? head.hero : null;
-
   return (
     <div className={ styles.page }>
       <Helmet title={ metaTitle } meta={ meta } />
 
-      <div className={ styles.wrapper + " " + styles.pageContent }>
-        <div className={ styles.body }>
-          <div className={ styles.header }>
-            <h2 className={ styles.heading }>{ head.title }</h2>
+      <div
+        className={ styles.hero }
+        style={ head.hero && {
+          background: `#111 url(${ head.hero }) 50% 50% / cover`,
+        }}
+      >
+        <div className={ styles.header }>
+          <div className={ styles.wrapper }>
+            <h1 className={ styles.heading }>{ head.title }</h1>
             {
-              pageDate &&
-              <time className={styles.date} key={pageDate.toISOString()}>
-                { pageDate.toDateString() }
-              </time>
+              head.cta &&
+              <Link to={ head.cta.link }>
+                <Button className={ styles.cta } light { ...head.cta.props }>
+                  { head.cta.label }
+                </Button>
+              </Link>
             }
           </div>
+        </div>
+      </div>
+
+      <div className={ styles.wrapper + " " + styles.pageContent }>
+        <div className={ styles.body }>
           {
             isLoading
             ? <Loading /> :
@@ -78,10 +88,7 @@ const Post = (
               {
                 cizm_path &&
                 <div>
-                  {
-                    category &&
-                    <Category text={category} />
-                  }
+                  { category && <Category text={category} /> }
 
                   <div className={ styles.cizmLink }>
                     This post is auto-generated from a thread hosted on
@@ -89,16 +96,11 @@ const Post = (
                       Collaborizm.com
                     </Link>
                   </div>
-
-                  {/* <div className={ styles.cizmExcerpt }> {description} </div> */}
-
                 </div>
               }
-              {
-                hero &&
-                <img src={ hero } alt={ head.title } className={ styles.hero } />
-              }
+
               { body }
+
               {
                 cizm_path &&
                 <div className={ styles.cizmLink + " " + styles.cizmThread }>
@@ -117,7 +119,7 @@ const Post = (
   )
 }
 
-Post.propTypes = {
+Project.propTypes = {
   isLoading: PropTypes.bool,
   __filename: PropTypes.string,
   __url: PropTypes.string,
@@ -125,8 +127,8 @@ Post.propTypes = {
   body: PropTypes.string,
 }
 
-Post.contextTypes = {
+Project.contextTypes = {
   metadata: PropTypes.object.isRequired,
 }
 
-export default Post
+export default Project

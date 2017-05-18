@@ -7,7 +7,7 @@ import Page from '../Page';
 const Blog = props => (
   <Page {...props}>
     <Helmet
-      title="Harsha's blog"
+      title="Harsha's Blog"
       />
     <LatestPosts numberOfPosts={Infinity}/>
   </Page>

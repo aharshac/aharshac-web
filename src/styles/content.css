@@ -1,0 +1,6 @@
+pre {
+  overflow-x: scroll;
+  padding: 10px;
+  border: 2px solid #ddd;
+  background-color: #eee;
+}

@@ -25,13 +25,16 @@ const PagePreview = ({ __url, title, date, description, category }) => {
       </div>
       <div className={ styles.description }>
 
-        { category && <div className={ styles.category } ><Category text={category} /></div> }
+
         { description }
         { " " }
       </div>
-      <Link to={ url} className={ styles.readMore }>
-        <Button primary>{ "Read More →" }</Button>
-      </Link>
+      <div className={ styles.footerBar }>
+        <Link to={ url} className={ styles.readMore }>
+          <Button className={ styles.readMoreButton } > Read More → </Button>
+        </Link>
+        { category && <div className={ styles.category } ><Category text={category} /></div> }
+      </div>
     </div>
   )
 }

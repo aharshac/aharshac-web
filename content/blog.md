@@ -1,4 +1,4 @@
 ---
-title: Harsha's blog
+title: My Blog
 layout: Blog
 ---

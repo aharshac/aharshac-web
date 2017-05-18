@@ -9,10 +9,11 @@ import WorkExperience from "./WorkExperience"
 import Skills from "./Skills"
 import Interests from "./Interests"
 import Feed from "./Feed"
+import Portfolio from "./Portfolio"
 import styles from "./index.css"
 
 import metadata from '../../metadata'
-const { pkg, description, title, avatar, networks:{ twitter_id, blog } } = metadata
+const { pkg, description, title, avatar, networks:{ twitter_id, blog, portfolio } } = metadata
 
 const meta = [
   { property: "og:type", content: "article" },
@@ -44,11 +45,9 @@ const Homepage = () => {
 
         <Education />
 
-        <Interests />
-        {/*
+        <Portfolio url={portfolio} />
 
-        <Work/>
-        */}
+        <Interests />
 
         <Feed url={blog} />
 

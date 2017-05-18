@@ -39,6 +39,7 @@ export default (config = {}) => {
           loader: phenomicLoader,
           query: {
             context: path.join(__dirname, config.source),
+            plugins: collaborizm_plugins,
             // plugins: [
             //   ...require("phenomic/lib/loader-preset-markdown").default
             // ]

@@ -10,6 +10,7 @@ export default {
   /* Social network links */
   networks: {
     blog: "/blog",
+    portfolio: "/portfolio",
     collaborizm: "https://www.collaborizm.com/profile/Hyt3y6XK",
     facebook: "https://www.facebook.com/harsha.c.alva",
     github: "https://github.com/aharshac",

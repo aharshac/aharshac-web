@@ -7,9 +7,9 @@ module.exports = (config) => [
           variables: {
             maxWidth: "60rem",
             // colorPrimaryDark: "#107491",
-            // colorPrimary: "#007acc",
+            colorPrimary: "#007acc",
             colorPrimaryDark: "#cc1616",
-            colorPrimary: "#ff3b0a",
+            // colorPrimary: "#ff3b0a",
             colorSecondaryDark: "#22846C",
             colorSecondary: "#46BE77",
             colorNeutralDark: "#111",

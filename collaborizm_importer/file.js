@@ -2,7 +2,7 @@ import fs from 'fs-extra';
 import path from 'path';
 import matter from 'gray-matter';
 
-// const root = path.resolve(__dirname, './');
+// const path_root = path.resolve(__dirname, './');
 const path_root = path.resolve(__dirname, '../content/blog');
 const path_threads = `${path_root}/czd`;
 
@@ -30,8 +30,8 @@ const writeThreadFile = (cizm_thread_id, object) => {
   try {
     fs.ensureDirSync(path_threads);
     // fs.outputJsonSync(filePath, object);
-    const { cizm_thread_id, cizm_path, category, date, description, title, route, layout } = object;
-    const op = matter.stringify(" ", { cizm_thread_id, cizm_path, category, date, title, route, layout, description });
+    const { cizm_thread_id, cizm_path, category, date, description, title, route, layout, text } = object;
+    const op = matter.stringify(text, { cizm_thread_id, cizm_path, category, date, title, route, layout, description });
     fs.outputFileSync(filePath, op)
     return true;
   } catch (e) {
