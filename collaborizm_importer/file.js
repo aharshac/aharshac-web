@@ -2,22 +2,32 @@ import fs from 'fs-extra';
 import path from 'path';
 import matter from 'gray-matter';
 
-// const path_root = path.resolve(__dirname, './');
-const path_root = path.resolve(__dirname, '../content/blog');
-const path_threads = `${path_root}/czd`;
+import { removeText } from './util';
 
-const readThreadFileDate = (cizm_thread_id) => {
-  const filePath = `${path_threads}/${cizm_thread_id}.md`;
+const DEBUG = true;
 
-  if (!fs.pathExistsSync(filePath)) return false;
+let path_root, path_threads, path_projects;
+
+if (DEBUG) {
+  path_root = path.resolve(__dirname, './');
+  path_threads = path.resolve(path_root, './czd');
+  path_projects = path.resolve(path_root, './czp');
+} else {
+  path_root = path.resolve(__dirname, '../content/');
+  path_threads = path.resolve(path_root, './blog/czd');
+  path_projects = path.resolve(path_root, './portfolio/czp');
+}
+
+
+const readFileDate = (fileName, filePath) => {
+  const file = path.resolve(filePath, `./${fileName}.md`);
+
+  if (!fs.pathExistsSync(file)) return false;
 
   try {
-    // const file = fs.readJsonSync(filePath);
-    // return file.date;
-    const file = matter.read(filePath);
-    // console.log(file.data);
-    if (file && file.data && file.data.date) {
-      return file.data.date;
+    const content = matter.read(file);
+    if (content && content.data && (content.data.date_modified || content.data.date)) {
+      return content.data.date_modified || content.data.date;
     }
     return false;
   } catch (e) {
@@ -25,18 +35,38 @@ const readThreadFileDate = (cizm_thread_id) => {
   }
 }
 
-const writeThreadFile = (cizm_thread_id, object) => {
-  const filePath = `${path_threads}/${cizm_thread_id}.md`;
+const readProjectFileDate = (cizm_project_id) => {
+  return readFileDate(cizm_project_id, path_projects);
+}
+
+const readThreadFileDate = (cizm_thread_id) => {
+  return readFileDate(cizm_thread_id, path_threads);
+}
+
+
+
+const writeFile = (fileName, filePath, object) => {
+  if (!object) return false;
   try {
-    fs.ensureDirSync(path_threads);
-    // fs.outputJsonSync(filePath, object);
-    const { cizm_thread_id, cizm_path, category, date, description, title, route, layout, text } = object;
-    const op = matter.stringify(text, { cizm_thread_id, cizm_path, category, date, title, route, layout, description });
-    fs.outputFileSync(filePath, op)
+    fs.ensureDirSync(filePath);
+    const file = path.resolve(filePath, `./${fileName}.md`);
+
+    const op = matter.stringify(object.text, removeText(object));
+    fs.outputFileSync(file, op)
     return true;
   } catch (e) {
     return false;
   }
 }
 
-export { path_threads, readThreadFileDate, writeThreadFile };
+const writeProjectFile = (cizm_project_id, object) => {
+  return writeFile(cizm_project_id, path_projects, object);
+}
+
+const writeThreadFile = (cizm_thread_id, object) => {
+  return writeFile(cizm_thread_id, path_threads, object);
+}
+
+
+
+export { path_threads, path_projects, readProjectFileDate, writeProjectFile, readThreadFileDate, writeThreadFile };

@@ -1,10 +1,27 @@
 // import remark from "remark"
-import stripMd from "remove-markdown"
-import prune from './prune';
+import moment from 'moment';
+import stripMd from "remove-markdown";
+// import prune from './prune';
 
 const getDescription = (text) => {
   return prune(stripMd(text), 140, "…");
 }
+
+const prune = (s: string, maxLength: number, end: string = "…"): string => {
+  const trimmed = s.substr(0, maxLength)
+
+  if (trimmed === s) {
+    return s
+  }
+
+  return (
+    trimmed.substr(
+      0,
+      Math.min(trimmed.length, trimmed.lastIndexOf(" "))
+    )
+    + end
+  )
+};
 
 const stripTitle = (title) => {
   return title
@@ -22,8 +39,8 @@ const formatThread = (thread, collaborizm_id) => {
   if ( !category || !createdOn || !text || !title || !item || !itemType || !type || !id ) return;
   if (item !== collaborizm_id || itemType !== "user" || type !== "discussion") return false;
 
-  const stripped_file = stripTitle(title);
-  const route = stripped_file ? `blog/${stripped_file}.md` : null;
+  const stripped_title = stripTitle(title);
+  const route = stripped_title ? `blog/${stripped_title}.md` : null;
   return {
     cizm_thread_id: id,
     cizm_path: `https://www.collaborizm.com/thread/${id}`,
@@ -31,10 +48,59 @@ const formatThread = (thread, collaborizm_id) => {
     date: createdOn,
     description: getDescription(text),
     title,
+    stripped_title,
     text,
     route,
     layout: 'Post',
   }
 };
 
-export { formatThread };
+//  about_text, created_on, headline, id, is_public, leader_id, modifiied_on, name, photo_profile.public_id, photo_cover.public_id, summary
+const formatProject = (project, collaborizm_id) => {
+  if (!project) return false;
+  const { about_text, created_on, headline, id, is_public, leader_id, modified_on, name, photo_profile, photo_cover, summary } = project;
+
+  if (!(about_text && created_on && headline && id  && leader_id && modified_on
+    && name && photo_profile && photo_cover) ) return; // && summary && is_public
+  if (leader_id !== collaborizm_id) return;
+
+  const stripped_title = stripTitle(name);
+  const route = stripped_title ? `portfolio/${stripped_title}.md` : null;
+  return {
+    cizm_project_id: id,
+    cizm_path: `https://www.collaborizm.com/project/${id}`,
+    date: created_on,
+    date_modified: modified_on,
+    summary: summary ? summary : '',
+    description: headline,
+    title: name,
+    stripped_title,
+    text: about_text,
+    route,
+    published: is_public,
+    cover: photo_cover.public_id,
+    thumbnail: photo_profile.public_id,
+    layout: 'Project',
+  }
+};
+
+
+const removeText = (obj) => {
+  if (!obj) return false;
+  var copy = Object.assign({}, obj)
+  delete copy.text;
+  return copy;
+};
+
+// return true if  dates are invalid, or if dateCizm is after dateFile
+const isCizmDateNewer = (dateFile, dateCizm) => {
+  if (!dateFile || !dateCizm) return true;
+
+  const momentFile = moment(dateFile);
+  const momentCizm = moment(dateCizm);
+
+  if (!(momentFile.isValid() && momentCizm.isValid)) return true;
+  return momentCizm.isAfter(momentFile);
+};
+
+export { formatThread, formatProject, removeText, isCizmDateNewer };
