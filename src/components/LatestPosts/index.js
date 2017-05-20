@@ -8,18 +8,37 @@ import PagesList from "../../components/PagesList"
 const defaultNumberOfPosts = 6
 
 const LatestPosts = (props, { collection }) => {
-  const latestPosts = enhanceCollection(collection, {
+  const maxCount = props.numberOfPosts || defaultNumberOfPosts;
+
+  const sortedPosts = enhanceCollection(collection, {
     filter: { layout: "Post" },
     sort: "date",
     reverse: true,
-  })
-  .slice(0, props.numberOfPosts || defaultNumberOfPosts)
+  });
+  const latestPosts = sortedPosts.slice(0, maxCount);
+  const totalCount = sortedPosts.length;
+
+  // let status = null;
+  //
+  // if (totalCount > 0) {
+  //   if (maxCount >= totalCount) {
+  //     status = `Showing ${totalCount} posts`;
+  //   } else {
+  //     status = `Showing ${maxCount} of ${totalCount} posts`;
+  //   }
+  // }
 
   return (
     <div>
       {/* <h1 className={ styles.latestPosts }>
         { "Latest Posts" }
       </h1> */}
+      {
+        totalCount > 0 &&
+        <span>
+          { maxCount >= totalCount ? `Showing ${totalCount} posts` : `Showing ${maxCount} of ${totalCount} posts` }
+        </span>
+      }
       <PagesList pages={ latestPosts } />
     </div>
   )

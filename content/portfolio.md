@@ -1,4 +1,4 @@
 ---
-title: Harsha's Portfolio
+title: Portfolio
 layout: Portfolio
 ---

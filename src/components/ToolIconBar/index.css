@@ -1,0 +1,30 @@
+.icons {
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.icon {
+  font-size: 1.2rem;
+  color: var(--colorPrimaryDark);
+  margin: 0.15em 5px;
+
+  transition: transform 0.15s ease-out;
+  text-decoration: none !important;
+  border-bottom: none !important;
+
+  & > :global(.SVGInline) {
+    display: inline-flex;
+    align-items: center;
+    height: 1.6em;
+  }
+
+  & svg {
+    width: 1.2em;
+  }
+
+  &:hover {
+    transform: scale(1.2);
+  }
+}

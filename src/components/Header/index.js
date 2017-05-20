@@ -12,8 +12,10 @@ import iconNpm from '../../assets/icons/npm.svg';
 
 import styles from "./index.css"
 
-const Header = (props, { metadata: { title, networks: { blog, collaborizm, facebook, github, linkedin, npm, stackoverflow, twitter },
-  headerItems } }) => (
+const Header = (props, { metadata: { title, networks: { blog, portfolio, collaborizm,
+    facebook, github, linkedin, npm, stackoverflow, twitter }
+  , headerItems } }) => (
+
   <header className={ styles.header }>
     <nav className={ styles.nav }>
       <div className={ styles.navPart1 }>
@@ -25,7 +27,10 @@ const Header = (props, { metadata: { title, networks: { blog, collaborizm, faceb
         </Link>
       </div>
       <div className={ styles.navPart2 }>
+        { headerItems.portfolio && <Link className={styles.link} to={portfolio}> Portfolio </Link> }
+
         { headerItems.blog && <Link className={styles.link} to={blog}>Blog</Link> }
+
         {
           headerItems.collaborizm && collaborizm &&
           <a href={ collaborizm } className={ `${styles.link} hideIfMobile` } >

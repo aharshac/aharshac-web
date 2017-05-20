@@ -7,8 +7,8 @@ import Loading from "../../components/Loading"
 import Category from "../../components/Category"
 import styles from "./index.css"
 
-import "../../styles/content.css"
-import "../../styles/table.css"
+import "../../styles/content.md.css"
+import "../../styles/table.md.css"
 
 const Post = (
   {
@@ -61,58 +61,62 @@ const Post = (
       <Helmet title={ metaTitle } meta={ meta } />
 
       <div className={ styles.wrapper + " " + styles.pageContent }>
-        <div className={ styles.body }>
-          <div className={ styles.header }>
-            <h2 className={ styles.heading }>{ head.title }</h2>
-            {
-              pageDate &&
-              <time className={styles.date} key={pageDate.toISOString()}>
-                { pageDate.toDateString() }
-              </time>
-            }
-          </div>
-          {
-            isLoading
-            ? <Loading /> :
-            <BodyContainer>
-              {
-                cizm_path &&
-                <div>
-                  {
-                    category &&
-                    <Category text={category} />
-                  }
+        {
+          isLoading
+          ? <Loading /> :
 
-                  <div className={ styles.cizmLink }>
-                    This post is auto-generated from a thread hosted on
-                    <Link to="https://www.collaborizm.com/" className={ styles.readMore + " " + styles.collaborizm }>
-                      Collaborizm.com
+          <div className={ styles.body }>
+            <div className={ styles.header }>
+              <h2 className={ styles.heading }>{ head.title }</h2>
+              {
+                pageDate &&
+                <time className={styles.date} key={pageDate.toISOString()}>
+                  { pageDate.toDateString() }
+                </time>
+              }
+            </div>
+
+              <BodyContainer>
+                {
+                  cizm_path &&
+                  <div>
+
+                    <div className={ styles.cizmLink }>
+                      This post is auto-generated from a thread hosted on
+                      <Link to="https://www.collaborizm.com/" className={ styles.readMore + " " + styles.collaborizm }>
+                        Collaborizm.com
+                      </Link>
+                    </div>
+
+                    {
+                      category &&
+                      <Category text={category} />
+                    }
+
+                    {/* <div className={ styles.cizmExcerpt }> {description} </div> */}
+
+                  </div>
+                }
+                {
+                  hero &&
+                  <img src={ hero } alt={ head.title } className={ styles.hero } />
+                }
+                { body }
+                {
+                  cizm_path &&
+                  <div className={ styles.cizmLink + " " + styles.cizmThread }>
+                    <hr className={ styles.cizmSeparator} />
+                    Join the conversation at
+                    <Link to={ cizm_path } className={ styles.readMore }>
+                      { cizm_path }
                     </Link>
                   </div>
-
-                  {/* <div className={ styles.cizmExcerpt }> {description} </div> */}
-
-                </div>
-              }
-              {
-                hero &&
-                <img src={ hero } alt={ head.title } className={ styles.hero } />
-              }
-              { body }
-              {
-                cizm_path &&
-                <div className={ styles.cizmLink + " " + styles.cizmThread }>
-                  <hr className={ styles.cizmSeparator} />
-                  Join the conversation at
-                  <Link to={ cizm_path } className={ styles.readMore }>
-                    { cizm_path }
-                  </Link>
-                </div>
-              }
-            </BodyContainer>
-          }
-        </div>
+                }
+              </BodyContainer>
+          </div>
+        }
       </div>
+
     </div>
   )
 }

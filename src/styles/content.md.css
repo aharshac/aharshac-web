@@ -1,0 +1,84 @@
+.md-img {
+  max-width: 70% !important;
+  margin: 0 auto !important;
+  width: 100%;
+  width: auto;
+  height: auto;
+  display: block;
+
+  @media (--mobile) {
+    max-width: 100% !important;
+    margin-bottom: 0.2em;
+  }
+}
+
+.md-yt {
+  position: relative;
+  height: 0;
+  padding-bottom: 56%; /* The height of the item will now be 56% of the width. */
+  max-width: 70%;
+  margin: 0 auto;
+
+  padding-top: 30px;
+  overflow: hidden;
+}
+
+/* Adjust the iframe so it's rendered in the outer-width and outer-height of it's parent */
+.md-yt iframe. .md-yt object, .md-yt embed {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+}
+
+.md-at-person a {
+  border-bottom: 0 none;
+  text-decoration: none;
+  position: relative;
+  letter-spacing: 0.001rem;
+  padding: 0 6px;
+  border-radius: 5px;
+  background-color: #f1f3f9;
+  color: #4c70bd;
+
+  &:before{
+    content: "@";
+  }
+}
+
+.md-at-project a {
+  border-bottom: 0 none;
+  text-decoration: none;
+  position: relative;
+  letter-spacing: 0.001rem;
+  letter-spacing: 0;
+  box-shadow: 0 2px 0 -1px #68b1bb;
+  color: #68b1bb;
+}
+
+.md-hashtag a {
+  border-bottom: 0 none;
+  text-decoration: none;
+  position: relative;
+  letter-spacing: 0.001rem;
+  padding: 0 6px;
+  border-radius: 5px;
+  background-color: #f3f1f9;
+  color: #7260af;
+
+  &:before{
+    content: "#";
+  }
+}
+
+.md-hashtag-adhoc {
+  border-bottom: 0 none;
+  text-decoration: none;
+  position: relative;
+  letter-spacing: 0.001rem;
+  padding: 0 6px;
+  border-radius: 5px;
+  background-color: #f3f1f9;
+  color: #7260af;
+}

@@ -23,6 +23,7 @@ export default {
   /* header button visibility */
   headerItems: {
     blog: true,
+    portfolio: true,
     collaborizm: true,
     facebook: false,
     github: true,

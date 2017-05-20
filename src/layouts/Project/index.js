@@ -2,14 +2,17 @@ import React, { PropTypes } from "react"
 import Helmet from "react-helmet"
 import warning from "warning"
 import { BodyContainer, joinUri, Link } from "phenomic"
+import moment from "moment";
 
 import Loading from "../../components/Loading"
 import Category from "../../components/Category"
 import Button from "../../components/Button"
+import ToolIconBar from '../../components/ToolIconBar';
+import SkillBar from '../../components/SkillBar';
 import styles from "./index.css"
 
-import "../../styles/content.css"
-import "../../styles/table.css"
+import "../../styles/content.md.css"
+import "../../styles/table.md.css"
 
 const Project = (
   {
@@ -33,17 +36,12 @@ const Project = (
   const socialImage = head.hero && head.hero.match("://") ? head.hero
     : joinUri(process.env.PHENOMIC_USER_URL, head.hero)
 
-  const cizm_path = head.cizm_path;
-  const category = head.category;
   const description = head.description;
 
   const meta = [
     { property: "og:type", content: "article" },
     { property: "og:title", content: metaTitle },
-    {
-      property: "og:url",
-      content: joinUri(process.env.PHENOMIC_USER_URL, __url),
-    },
+    { property: "og:url", content: joinUri(process.env.PHENOMIC_USER_URL, __url), },
     { property: "og:image", content: socialImage },
     { property: "og:description", content: description },
     { name: "twitter:card", content: "summary" },
@@ -54,24 +52,36 @@ const Project = (
     { name: "description", content: description },
   ]
 
+
+
+  const { cizm_path, published, cta, category, cover, hero, date_end, date, skills, github, npm } = head;
+
+
+  const project_path = (cizm_path && published) ? cizm_path : null;
+  const cta_title = project_path ? 'Join Project' : null;
+
+  const durStart = date && moment(date).isValid() ? moment(date).format('MMM YYYY') : null;
+  const durEnd = date_end && moment(date_end).isValid() ? moment(date_end).format('MMM YYYY') : null;
+
   return (
     <div className={ styles.page }>
       <Helmet title={ metaTitle } meta={ meta } />
 
       <div
         className={ styles.hero }
-        style={ head.hero && {
-          background: `#111 url(${ head.hero }) 50% 50% / cover`,
+        style={ cover && {
+          background: `url(${ cover || hero }) 50% 50% / cover`,
         }}
       >
         <div className={ styles.header }>
           <div className={ styles.wrapper }>
             <h1 className={ styles.heading }>{ head.title }</h1>
+            { description && <h2 className={ styles.description }>{ description }</h2> }
             {
-              head.cta &&
-              <Link to={ head.cta.link }>
-                <Button className={ styles.cta } light { ...head.cta.props }>
-                  { head.cta.label }
+              (cta_title || (cta && cta.link && cta.label)) &&
+              <Link to={ project_path || cta.link }>
+                <Button className={ styles.cta }>
+                  { cta_title || cta.label }
                 </Button>
               </Link>
             }
@@ -80,18 +90,32 @@ const Project = (
       </div>
 
       <div className={ styles.wrapper + " " + styles.pageContent }>
-        <div className={ styles.body }>
-          {
-            isLoading
-            ? <Loading /> :
+        {
+          isLoading ?
+          <Loading /> :
+
+          <div className={ styles.body }>
             <BodyContainer>
+              {
+                cizm_path &&
+                <div className={ styles.meta }>
+                  <span className={styles.duration} >
+                    { durStart && <time key={durStart} > {durStart} </time> }
+                    { (durStart && durEnd) && ' - ' }
+                    { durEnd && <time key={durEnd} > {durEnd} </time> }
+                  </span>
+                  { skills && <SkillBar skills={skills} style={styles.skills} /> }
+                  { ( cizm_path || github || npm ) && <ToolIconBar style={styles.toolbar} collaborizm={cizm_path} github={github} npm={npm} width="1.4em" /> }
+                </div>
+              }
+
               {
                 cizm_path &&
                 <div>
                   { category && <Category text={category} /> }
 
                   <div className={ styles.cizmLink }>
-                    This post is auto-generated from a thread hosted on
+                    This project is hosted on
                     <Link to="https://www.collaborizm.com/" className={ styles.readMore + " " + styles.collaborizm }>
                       Collaborizm.com
                     </Link>
@@ -105,15 +129,15 @@ const Project = (
                 cizm_path &&
                 <div className={ styles.cizmLink + " " + styles.cizmThread }>
                   <hr className={ styles.cizmSeparator} />
-                  Join the conversation at
+                  Join the project at
                   <Link to={ cizm_path } className={ styles.readMore }>
                     { cizm_path }
                   </Link>
                 </div>
               }
             </BodyContainer>
-          }
-        </div>
+          </div>
+        }
       </div>
     </div>
   )

@@ -1,3 +1,7 @@
+.underline {
+  border-bottom: 1px solid #EEE;
+}
+
 .colored {
   color: var(--colorPrimaryDark);
 }

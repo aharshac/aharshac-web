@@ -4,7 +4,7 @@ import Emoji from '../Emoji';
 import styles from './index.css';
 
 const Tag = ({ text, emoji }) => (
-  <span className={styles.tag}>
+  <span className={styles.tag }>
     {emoji !== undefined && <Emoji text={emoji}/>}
     {text}
   </span>

@@ -20,7 +20,7 @@ const importProjects = (onFinish) => {
   console.log(`  Importing projects to ${path_projects} ...`);
   getProjects(collaborizm_id, (objects) => {
     if (!objects) return onFinish();
-    console.log(`    Got ${objects.length} threads`);
+    console.log(`    Got ${objects.length} projects`);
 
     if (objects.length === 0) return onFinish();
 
@@ -48,10 +48,10 @@ const importProjects = (onFinish) => {
 
 
 const importThreads = (onFinish) => {
-  console.log(`  Importing threads to ${path_threads} ...`);
+  console.log(`  Importing posts to ${path_threads} ...`);
   getThreads(collaborizm_id, (objects) => {
     if (!objects) return onFinish();
-    console.log(`    Got ${objects.length} threads`);
+    console.log(`    Got ${objects.length} posts`);
 
     if (objects.length === 0) return onFinish();
 

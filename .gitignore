@@ -6,5 +6,5 @@ node_modules
 dist
 
 # collaborizm content
-collaborizm/czd
-collaborizm/czp
+**/czd/
+**/czp/

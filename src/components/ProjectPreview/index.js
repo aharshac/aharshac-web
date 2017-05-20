@@ -1,18 +1,30 @@
 import React, { PropTypes } from 'react';
-import Svg from 'react-svg-inline';
+// import Svg from 'react-svg-inline';
+import { Link } from "phenomic";
+import moment from "moment";
 
-import Tag from '../Tag';
-import { Link } from "phenomic"
+// import Tag from '../Tag';
 
-import iconGithub from '../../assets/icons/iconmonstr-github-1.svg';
-import iconSvg from '../../assets/icons/npm.svg';
-import iconCollaborizm from '../../assets/icons/collaborizm.svg';
+import ToolIconBar from '../ToolIconBar';
+import SkillBar from '../SkillBar';
 
 import styles from './index.css';
 
-const ProjectPreview = ({ __url, href, repo, npm, title, description, preview, cover, skills, cizm_path }) => {
-  const img = preview || cover;
+String.prototype.trunc = (n, useWordBoundary ) => {
+  if (this.length <= n) { return this; }
+  var subString = this.substr(0, n-1);
+  return (useWordBoundary
+    ? subString.substr(0, subString.lastIndexOf(' '))
+    : subString) + "&hellip";
+};
+
+const ProjectPreview = ({ __url, href, github, npm, title, description, preview, thumbnail, cover, skills, cizm_path, date, date_end }) => {
+  const img = preview || thumbnail || cover;
   const url = href || __url;
+
+  const durStart = date && moment(date).isValid() ? moment(date).format('MMM YYYY') : null;
+  const durEnd = date_end && moment(date_end).isValid() ? moment(date_end).format('MMM YYYY') : null;
+
 
   return (
     <div className={ styles.wrapper }>
@@ -29,16 +41,26 @@ const ProjectPreview = ({ __url, href, repo, npm, title, description, preview, c
           { title }
         </Link>
 
+        <div className={ styles.meta }>
+          <span className={styles.duration} >
+            { durStart && <time key={durStart} > {durStart} </time> }
+            { (durStart && durEnd) && ' - ' }
+            { durEnd && <time key={durEnd} > {durEnd} </time> }
+          </span>
+        </div>
+
 
         <div className={ styles.description }>
-          { description }
+          { description.trunc(90, true) }
           { " " }
         </div>
 
         <div className={ styles.footer }>
+          {/*}
           <ul className={styles.skills}>
-            {skills.map((skill, i) => <Tag key={i} text={skill} /> )}
+            { skills && skills.map((skill, i) => <Tag key={i} text={skill} />) }
           </ul>
+
           <ul className={styles.icons}>
             {
               npm &&
@@ -59,6 +81,9 @@ const ProjectPreview = ({ __url, href, repo, npm, title, description, preview, c
               </Link>
             }
           </ul>
+          */}
+          <SkillBar skills={skills} />
+          <ToolIconBar collaborizm={cizm_path} github={github} npm={npm} />
         </div>
       </div>
     </div>
@@ -70,11 +95,14 @@ ProjectPreview.propTypes = {
   title: PropTypes.string.isRequired,
   description: PropTypes.string,
   preview: PropTypes.string,
+  thumbnail: PropTypes.string,
   cover: PropTypes.string,
-  repo: PropTypes.string,
+  github: PropTypes.string,
   npm: PropTypes.string,
   href: PropTypes.string,
   cizm_path: PropTypes.string,
+  date: PropTypes.string,
+  date_end: PropTypes.string,
   skills: PropTypes.array,
 };
 

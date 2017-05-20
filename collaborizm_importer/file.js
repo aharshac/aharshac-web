@@ -4,7 +4,7 @@ import matter from 'gray-matter';
 
 import { removeText } from './util';
 
-const DEBUG = true;
+const DEBUG = false;
 
 let path_root, path_threads, path_projects;
 
@@ -18,6 +18,9 @@ if (DEBUG) {
   path_projects = path.resolve(path_root, './portfolio/czp');
 }
 
+
+const placeholderProject = id => `cizm_project_${id}`;
+const placeholderThread = id => `cizm_thread_${id}`;
 
 const readFileDate = (fileName, filePath) => {
   const file = path.resolve(filePath, `./${fileName}.md`);
@@ -36,11 +39,11 @@ const readFileDate = (fileName, filePath) => {
 }
 
 const readProjectFileDate = (cizm_project_id) => {
-  return readFileDate(cizm_project_id, path_projects);
+  return readFileDate(placeholderProject(cizm_project_id), path_projects);
 }
 
 const readThreadFileDate = (cizm_thread_id) => {
-  return readFileDate(cizm_thread_id, path_threads);
+  return readFileDate(placeholderThread(cizm_thread_id), path_threads);
 }
 
 
@@ -60,11 +63,11 @@ const writeFile = (fileName, filePath, object) => {
 }
 
 const writeProjectFile = (cizm_project_id, object) => {
-  return writeFile(cizm_project_id, path_projects, object);
+  return writeFile(placeholderProject(cizm_project_id), path_projects, object);
 }
 
 const writeThreadFile = (cizm_thread_id, object) => {
-  return writeFile(cizm_thread_id, path_threads, object);
+  return writeFile(placeholderThread(cizm_thread_id), path_threads, object);
 }
 
 

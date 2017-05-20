@@ -19,9 +19,9 @@
 .header {
   display: block;
   font-size: 1em;
-  margin-bottom: 2.5em;
+  margin-bottom: 1em;
   text-align: center;
-  border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid #ccc !important;
   padding-bottom: 1em;
 
   @media (--mobile) {
@@ -71,6 +71,27 @@
   /* handy for content */
   & img {
     max-width: 100%;
+  }
+
+  & pre {
+    overflow-x: scroll;
+    padding: 10px;
+    border: 2px solid #ddd;
+    background-color: #eee;
+  }
+
+  & table {
+    overflow-x: scroll;
+  }
+
+  /* code */
+  & *:not(pre) > code {
+    background-color: #f7f7f9;
+    border: 1px solid #e1e1e8;
+    border-radius: 3px;
+    color: #dd1144;
+    padding: 2px 4px;
+    overflow-wrap: break-word;
   }
 }
 

@@ -83,7 +83,7 @@ export default (config = {}) => {
           )*/
 
           test: /\.css$/,
-          exclude: /\.global\.css$/,
+          exclude: /\.(global|md)\.css$/,
           include: path.resolve(__dirname, "src"),
           loader: ExtractTextPlugin.extract({
             fallback: "style-loader",
@@ -111,7 +111,7 @@ export default (config = {}) => {
         },
         // *.global.css => global (normal) css
         {
-          test: /\.global\.css$/,
+          test: /\.(global|md)\.css$/,
           include: path.resolve(config.cwd, "src"),
           loader: ExtractTextPlugin.extract({
             fallback: "style-loader",

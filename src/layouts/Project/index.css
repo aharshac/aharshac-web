@@ -74,8 +74,12 @@
   flex-direction: column;
   align-self: center;
   width: 100%;
-  max-width: var(--maxWidth);
+  max-width: 80%;
   padding: 1rem 0.75rem;
+
+  @media (--mobile) {
+    max-width: 95%;
+  }
 }
 
 .hero {
@@ -98,11 +102,7 @@
   padding: 5rem 0;
   padding: 10vh 0;
   text-align: center;
-  background: linear-gradient(
-    to bottom,
-    var(--colorPrimaryDark),
-    color(var(--colorPrimary) a(0.2))
-  );
+  background-color: rgba(0, 0, 0, 0.4);
   height: 100%;
   justify-content: center;
 }
@@ -111,10 +111,59 @@
   color: var(--colorNeutralLight);
   letter-spacing: 1px;
   border-bottom: none;
+  font-size: 2.55rem;
+  margin: 0;
+
+  @media (--mobile) {
+    line-height: 1.4em;
+    margin-top: 0;
+    font-size: 1.65rem;
+  }
+}
+
+.description {
+  color: var(--colorNeutralLight);
+  letter-spacing: 1px;
+  border-bottom: none;
+  font-size: 1.65em;
+  padding: 0;
+  font-weight: 400;
+  line-height: 1.5em;
+  margin: 0 0 1em 0;
+
+  @media (--mobile) {
+    font-size: 1.175rem;
+    margin: 1em auto;
+  }
 }
 
 .cta {
-  margin-top: 2rem;
+  cursor: pointer;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  white-space: nowrap;
+  letter-spacing: 0.02rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  border-radius: 4px;
+  transition: all .25s;
+  transition-timing-function: ease-out;
+  background-color: transparent;
+  color: #fff;
+  border: 2px solid #fff !important;
+
+  font-size: 1.1em;
+  padding: 10px 20px;
+
+  &:hover {
+    background-color: #fff;
+    color: #5C6BC0;
+  }
+
+  @media (--mobile) {
+    margin-top: 5px;
+  }
 }
 
 .pageContent {
@@ -138,6 +187,21 @@
   /* handy for content */
   & img {
     max-width: 100%;
+  }
+
+  & img {
+    max-width: 100%;
+  }
+
+  & pre {
+    overflow-x: scroll;
+    padding: 10px;
+    border: 2px solid #ddd;
+    background-color: #eee;
+  }
+
+  & table {
+    overflow-x: scroll;
   }
 }
 
@@ -165,4 +229,34 @@
   height: 2px;
   background-color: #555;
   margin: 10px 0;
+}
+
+.meta {
+  display: block;
+  font-size: 1em;
+  margin-bottom: 1em;
+  text-align: center;
+  border-bottom: 1px solid #ccc !important;
+  padding-bottom: 0.5em;
+
+  @media (--mobile) {
+    margin-bottom: 1.5em;
+    padding-bottom: 0.5em;
+  }
+}
+
+.toolbar {
+  margin: 0.25em 0;
+}
+
+.skills {
+  font-size: 1.1em !important;
+  font-weight: 600;
+  margin: .5em 0 0.25em 0;
+  line-height: 3em;
+}
+
+.duration {
+  font-weight: 700;
+  opacity: 0.8;
 }
