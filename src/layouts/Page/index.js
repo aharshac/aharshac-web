@@ -99,11 +99,11 @@ const Page = (
           <div>
             { header }
             <div className={ styles.body }>
+              { children }
              <BodyContainer>{ body }</BodyContainer>
             </div>
           </div>
         }
-        { children }
         { footer }
       </div>
     </div>

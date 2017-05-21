@@ -81,19 +81,21 @@
 
 
 .title {
-  /*align-self: flex-start;*/
+  align-self: flex-start;
   flex-basis: auto;
   font-size: 1.15rem;
   font-weight: 700;
-  color: color(var(--colorPrimaryDark) a(70%));
+  color: color(var(--colorPrimaryDark) a(70%)) !important;
   display: block;
+  border-bottom: none !important;
 
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
 
   &:hover {
-    color: color(var(--colorSecondaryDark) a(70%));
+    color: color(var(--colorSecondaryDark) a(70%)) !important;
+    text-decoration: underline;
   }
 
   @media (--mobile) {

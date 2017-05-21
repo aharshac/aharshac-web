@@ -45,9 +45,9 @@ const Homepage = () => {
 
         <Education />
 
-        <Portfolio url={portfolio} />
-
         <Interests />
+
+        <Portfolio url={portfolio} />
 
         <Feed url={blog} />
 

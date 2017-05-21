@@ -48,10 +48,12 @@
   align-self: flex-start;
   font-size: 1.15rem;
   font-weight: 700;
-  color: color(var(--colorPrimaryDark) a(70%));
+  color: color(var(--colorPrimaryDark) a(70%)) !important;
+  border-bottom: none !important;
 
   &:hover {
-    color: color(var(--colorSecondaryDark) a(70%));
+    color: color(var(--colorSecondaryDark) a(70%)) !important;
+    text-decoration: underline;
   }
 }
 

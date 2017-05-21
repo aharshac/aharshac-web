@@ -76,45 +76,45 @@ const Post = (
               }
             </div>
 
-            <BodyContainer>
+            {
+              cizm_path &&
               <div>
+
+                <div className={ styles.cizmLink }>
+                  This post is auto-generated from a thread hosted on
+                  <Link to="https://www.collaborizm.com/" className={ styles.readMore + " " + styles.collaborizm } target="_blank" rel="noopener">
+                    Collaborizm.com
+                  </Link>
+                </div>
+
                 {
-                  cizm_path &&
-                  <div>
-
-                    <div className={ styles.cizmLink }>
-                      This post is auto-generated from a thread hosted on
-                      <Link to="https://www.collaborizm.com/" className={ styles.readMore + " " + styles.collaborizm } target="_blank" rel="noopener">
-                        Collaborizm.com
-                      </Link>
-                    </div>
-
-                    {
-                      category &&
-                      <Category text={category} />
-                    }
-
-                    {/* <div className={ styles.cizmExcerpt }> {description} </div> */}
-
-                  </div>
+                  category &&
+                  <Category text={category} />
                 }
-                {
-                  hero &&
-                  <img src={ hero } alt={ head.title } className={ styles.hero } />
-                }
-                { body }
-                {
-                  cizm_path &&
-                  <div className={ styles.cizmLink + " " + styles.cizmThread }>
-                    <hr className={ styles.cizmSeparator} />
-                    Join the conversation at
-                    <Link to={ cizm_path } className={ styles.readMore } target="_blank" rel="noopener">
-                      { cizm_path }
-                    </Link>
-                  </div>
-                }
+
+                {/* <div className={ styles.cizmExcerpt }> {description} </div> */}
+
               </div>
+            }
+            {
+              hero &&
+              <img src={ hero } alt={ head.title } className={ styles.hero } />
+            }
+
+            <BodyContainer>
+                { body }
             </BodyContainer>
+
+            {
+              cizm_path &&
+              <div className={ styles.cizmLink + " " + styles.cizmThread }>
+                <hr className={ styles.cizmSeparator} />
+                Join the conversation at
+                <Link to={ cizm_path } className={ styles.readMore } target="_blank" rel="noopener">
+                  { cizm_path }
+                </Link>
+              </div>
+            }
           </div>
         }
       </div>
