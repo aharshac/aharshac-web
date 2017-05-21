@@ -12,6 +12,13 @@ import iconNpm from '../../assets/icons/npm.svg';
 
 import styles from "./index.css"
 
+
+const _link = (to, svg, title) =>
+  <Link to={ to } className={ `${styles.link} hideIfMobile` } target="_blank" rel="noopener">
+    <Svg svg={ svg } cleanup />
+    <span className="hideIfMobile">{title}</span>
+  </Link>;
+
 const Header = (props, { metadata: { title, networks: { blog, portfolio, collaborizm,
     facebook, github, linkedin, npm, stackoverflow, twitter }
   , headerItems } }) => (
@@ -26,60 +33,25 @@ const Header = (props, { metadata: { title, networks: { blog, portfolio, collabo
           { title }
         </Link>
       </div>
+      
       <div className={ styles.navPart2 }>
-        { headerItems.portfolio && <Link className={styles.link} to={portfolio}> Portfolio </Link> }
+        { headerItems.portfolio && <Link className={styles.link} to={portfolio}> Portfolio</Link> }
 
         { headerItems.blog && <Link className={styles.link} to={blog}>Blog</Link> }
 
-        {
-          headerItems.collaborizm && collaborizm &&
-          <a href={ collaborizm } className={ `${styles.link} hideIfMobile` } >
-            <Svg svg={ iconCollaborizm } cleanup />
-            <span className="hideIfMobile">Collaborizm</span>
-          </a>
-        }
-        {
-          headerItems.facebook && facebook &&
-          <a href={ facebook } className={ `${styles.link} hideIfMobile` } >
-            <Svg svg={ iconFacebook } cleanup />
-            <span className="hideIfMobile">Facebook</span>
-          </a>
-        }
-        {
-          headerItems.github && github &&
-          <a href={ github } className={ `${styles.link} hideIfMobile` } >
-            <Svg svg={ iconGithub } cleanup />
-            <span className="hideIfMobile">GitHub</span>
-          </a>
-        }
-        {
-          headerItems.linkedin && linkedin &&
-          <a href={ linkedin } className={ `${styles.link} hideIfMobile` } >
-            <Svg svg={ iconLinkedin } cleanup />
-            <span className="hideIfMobile">LinkedIn</span>
-          </a>
-        }
-        {
-          headerItems.npm && npm &&
-          <a href={ npm } className={ `${styles.link} hideIfMobile` } >
-            <Svg svg={ iconNpm } cleanup />
-            <span className="hideIfMobile">NPM</span>
-          </a>
-        }
-        {
-          headerItems.stackoverflow && stackoverflow &&
-          <a href={ stackoverflow } className={ `${styles.link} hideIfMobile` } >
-            <Svg svg={ iconStackOverflow } cleanup />
-            <span className="hideIfMobile">Stack Overflow</span>
-          </a>
-        }
-        {
-          headerItems.twitter && twitter &&
-          <a  href={ twitter }  className={ `${styles.link} hideIfMobile` } >
-            <Svg svg={ iconTwitter } cleanup />
-            <span className="hideIfMobile">Twitter</span>
-          </a>
-        }
+        { (headerItems.collaborizm && collaborizm) && _link(collaborizm, iconCollaborizm, "Collaborizm") }
+
+        { (headerItems.facebook && facebook) &&  _link(facebook, iconFacebook, "Facebook") }
+
+        { (headerItems.github && github) && _link(github, iconGithub, "GitHub") }
+
+        { (headerItems.linkedin && linkedin) && _link(linkedin, iconLinkedin, "LinkedIn") }
+
+        { (headerItems.npm && npm) && _link(npm, iconNpm, "NPM") }
+
+        { (headerItems.stackoverflow && stackoverflow) && _link(stackoverflow, iconStackOverflow, "Stack Overflow") }
+
+        { (headerItems.twitter && twitter) && _link(twitter, iconTwitter, "Twitter") }
       </div>
     </nav>
   </header>

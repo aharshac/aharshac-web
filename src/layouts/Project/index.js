@@ -79,7 +79,7 @@ const Project = (
             { description && <h2 className={ styles.description }>{ description }</h2> }
             {
               (cta_title || (cta && cta.link && cta.label)) &&
-              <Link to={ project_path || cta.link }>
+              <Link to={ project_path || cta.link } target="_blank" rel="noopener">
                 <Button className={ styles.cta }>
                   { cta_title || cta.label }
                 </Button>
@@ -116,7 +116,7 @@ const Project = (
 
                   <div className={ styles.cizmLink }>
                     This project is hosted on
-                    <Link to="https://www.collaborizm.com/" className={ styles.readMore + " " + styles.collaborizm }>
+                    <Link to="https://www.collaborizm.com/" className={ styles.readMore + " " + styles.collaborizm } target="_blank" rel="noopener">
                       Collaborizm.com
                     </Link>
                   </div>
@@ -130,7 +130,7 @@ const Project = (
                 <div className={ styles.cizmLink + " " + styles.cizmThread }>
                   <hr className={ styles.cizmSeparator} />
                   Join the project at
-                  <Link to={ cizm_path } className={ styles.readMore }>
+                  <Link to={ cizm_path } className={ styles.readMore } target="_blank" rel="noopener">
                     { cizm_path }
                   </Link>
                 </div>

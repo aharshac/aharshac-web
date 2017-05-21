@@ -93,8 +93,8 @@ const postYoutubeReplacer = (whole, ytId) =>
   </div>`;
 
 // Collaborizm fixes
-const postPreTagRegex = /<pre.*?/g;
-const postPreTagReplacer = `<pre class="${uiClass.pre}"`;
+// const postPreTagRegex = /<pre.*?/g;
+// const postPreTagReplacer = `<pre class="${uiClass.pre}"`;
 
 const postTableRegex = /<table.*?/g;
 const postTableReplacer = `<table class="${uiClass.table}"`;
@@ -135,8 +135,8 @@ const postProcessHtml = rawHtml =>
     .replace(postYoutubeRegex, postYoutubeReplacer)
     .replace(postSoundcloudReplacer, soundCloudEmbedReplacer)
 
-    .replace(postTableRegex, postTableReplacer)
-    .replace(postPreTagRegex, postPreTagReplacer);
+    .replace(postTableRegex, postTableReplacer);
+    // .replace(postPreTagRegex, postPreTagReplacer);
 /////////
 
 

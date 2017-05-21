@@ -36,7 +36,7 @@ const LatestPosts = (props, { collection }) => {
       {
         totalCount > 0 &&
         <span>
-          { maxCount >= totalCount ? `Showing ${totalCount} posts` : `Showing ${maxCount} of ${totalCount} posts` }
+          Showing { maxCount >= totalCount ? ` ${totalCount} ` : ` ${maxCount} of ${totalCount} ` } posts
         </span>
       }
       <PagesList pages={ latestPosts } />

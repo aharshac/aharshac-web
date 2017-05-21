@@ -8,15 +8,24 @@ import ProjectsList from "../../components/ProjectsList"
 const defaultNumberOfPosts = 6
 
 const LatestPosts = (props, { collection }) => {
-  const latestProjects = enhanceCollection(collection, {
+  const maxCount = props.numberOfPosts || defaultNumberOfPosts;
+
+  const sortedProjects = enhanceCollection(collection, {
     filter: { layout: "Project" },
     sort: "date",
     reverse: true,
   })
-  .slice(0, props.numberOfPosts || defaultNumberOfPosts)
+  const latestProjects = sortedProjects.slice(0, maxCount);
+  const totalCount = sortedProjects.length;
 
   return (
     <div>
+      {
+        totalCount > 0 &&
+        <span>
+          Showing { maxCount >= totalCount ? ` ${totalCount} ` : ` ${maxCount} of ${totalCount} ` } projects
+        </span>
+      }
       <ProjectsList projects={ latestProjects } />
     </div>
   )

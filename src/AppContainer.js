@@ -1,7 +1,9 @@
 import React, { PropTypes } from "react"
 
+import 'style-loader!css-loader!prismjs/themes/prism-okaidia.css'
+// import 'style-loader!css-loader!prismjs/plugins/line-numbers/prism-line-numbers.css'
 import "./index.global.css"
-import "./highlight.global.css"
+// import "./highlight.global.css"
 
 import Container from "./components/Container"
 import DefaultHeadMeta from "./components/DefaultHeadMeta"

@@ -5,20 +5,17 @@ import moment from "moment";
 
 // import Tag from '../Tag';
 
-import ToolIconBar from '../ToolIconBar';
+// import ToolIconBar from '../ToolIconBar';
 import SkillBar from '../SkillBar';
 
 import styles from './index.css';
 
-String.prototype.trunc = (n, useWordBoundary ) => {
-  if (this.length <= n) { return this; }
-  var subString = this.substr(0, n-1);
-  return (useWordBoundary
-    ? subString.substr(0, subString.lastIndexOf(' '))
-    : subString) + "&hellip";
+const truncate = (string, n) => {
+  if (string.length <= n) return string;
+  return string.replace(new RegExp(`^(\.{${n}}[^\\s]*).*`, "i"), "$1 ...");
 };
 
-const ProjectPreview = ({ __url, href, github, npm, title, description, preview, thumbnail, cover, skills, cizm_path, date, date_end }) => {
+const ProjectPreview = ({ __url, href, title, description, preview, thumbnail, cover, date, date_end, /*github, cizm_path, npm,*/ skills,  }) => {
   const img = preview || thumbnail || cover;
   const url = href || __url;
 
@@ -51,7 +48,7 @@ const ProjectPreview = ({ __url, href, github, npm, title, description, preview,
 
 
         <div className={ styles.description }>
-          { description.trunc(90, true) }
+          { truncate(description, 90) }
           { " " }
         </div>
 
@@ -82,8 +79,8 @@ const ProjectPreview = ({ __url, href, github, npm, title, description, preview,
             }
           </ul>
           */}
-          <SkillBar skills={skills} />
-          <ToolIconBar collaborizm={cizm_path} github={github} npm={npm} />
+          { <SkillBar skills={skills} /> }
+          {/* <ToolIconBar collaborizm={cizm_path} github={github} npm={npm} /> */}
         </div>
       </div>
     </div>

@@ -1,0 +1,45 @@
+---
+cizm_project_id: HkHyNQbsg
+cizm_path: 'https://www.collaborizm.com/project/HkHyNQbsg'
+date: '2017-03-11T07:14:37.208Z'
+date_modified: '2017-04-28T16:17:13.017Z'
+summary: >-
+  With Pet FPV, you can monitor your pet's actions wirelessly and you can also
+  record the feed.
+description: 'The world, through your pet''s eyes and ears!'
+title: Pet FPV
+stripped_title: pet-fpv
+route: portfolio/pet-fpv.md
+published: false
+cover: covers/ychpqzpfpffwhoy9b1q8
+thumbnail: project_photos/i0m7elao7zdkiwmmegbq
+layout: Project
+---
+# Project Overview
+
+![mascot.jpg](czm://udjlqkxcvihlvmmbtai6)
+
+Many pet owners have always wondered how their pets see and investigate the world. This project is an answer to that question.
+
+# Teammates & Contributors I'm Looking For
+
+* Pet owners.
+* FPV enthusiasts.
+
+# Where I Need the Most Help
+
+Access to pets with willing owners.
+
+# Why Sponsor This Project?
+
+To upgrade the FPV setup to make a commercial product.
+
+# What's in it for people who join?
+
+* Learn about FPV.
+* See the world from a different point of view.
+
+
+# Why I'm Passionate About This Project
+
+I want to see what pets do! Also, this project is dedicated to the founders of Collaborizm.

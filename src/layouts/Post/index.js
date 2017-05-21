@@ -83,7 +83,7 @@ const Post = (
 
                     <div className={ styles.cizmLink }>
                       This post is auto-generated from a thread hosted on
-                      <Link to="https://www.collaborizm.com/" className={ styles.readMore + " " + styles.collaborizm }>
+                      <Link to="https://www.collaborizm.com/" className={ styles.readMore + " " + styles.collaborizm } target="_blank" rel="noopener">
                         Collaborizm.com
                       </Link>
                     </div>
@@ -107,7 +107,7 @@ const Post = (
                   <div className={ styles.cizmLink + " " + styles.cizmThread }>
                     <hr className={ styles.cizmSeparator} />
                     Join the conversation at
-                    <Link to={ cizm_path } className={ styles.readMore }>
+                    <Link to={ cizm_path } className={ styles.readMore } target="_blank" rel="noopener">
                       { cizm_path }
                     </Link>
                   </div>

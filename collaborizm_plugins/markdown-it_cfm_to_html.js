@@ -15,14 +15,30 @@ const markdownItOptions = {
   breaks: true
 };
 
+// const addLineNumbers = (code) => {
+// 	const linesNum = (1 + code.split('\n').length);
+//
+// 	let lines = new Array(linesNum);
+// 	lines = lines.join('<span></span>');
+//
+// 	return `<span class="line-numbers-rows">${lines}</span>`;
+// }
+
+
+const getCodeBlock = (code, lang) => {
+  const classAttribute = lang ? `class="language-${lang}"` : '';
+  return `<pre ${classAttribute}><code ${classAttribute}>${code}</code></pre>`;
+}
+
 markdownItOptions.highlight = (str, lang) => {
   if (lang && Prism.languages[lang]) {
+    const pLang = Prism.languages[lang];
     try {
-      return Prism.highlight(str, Prism.languages[lang]);
+      return getCodeBlock(Prism.highlight(str, pLang), lang);
     } catch (__) { null; }
   }
 
-  return Prism.highlight(str, Prism.languages.clike);
+  return getCodeBlock(Prism.highlight(str, Prism.languages.clike), "clike");
 };
 
 const cfmToHtml = (text, html, linkify) => {

@@ -189,19 +189,25 @@
     max-width: 100%;
   }
 
-  & img {
-    max-width: 100%;
-  }
-
   & pre {
     overflow-x: scroll;
     padding: 10px;
     border: 2px solid #ddd;
-    background-color: #eee;
+    /*background-color: #eee;*/
   }
 
   & table {
     overflow-x: scroll;
+  }
+
+  /* code */
+  & *:not(pre) > code {
+    background-color: #f7f7f9;
+    border: 1px solid #e1e1e8;
+    border-radius: 3px;
+    color: #dd1144;
+    padding: 2px 4px;
+    overflow-wrap: break-word;
   }
 }
 
