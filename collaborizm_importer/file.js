@@ -13,9 +13,9 @@ if (DEBUG) {
   path_threads = path.resolve(path_root, './czd');
   path_projects = path.resolve(path_root, './czp');
 } else {
-  path_root = path.resolve(__dirname, '../content/');
-  path_threads = path.resolve(path_root, './blog/czd');
-  path_projects = path.resolve(path_root, './portfolio/czp');
+  // path_root = path.resolve(__dirname, '../content/');
+  // path_threads = path.resolve(path_root, './blog/czd');
+  // path_projects = path.resolve(path_root, './portfolio/czp');
 }
 
 

@@ -14,7 +14,7 @@ const Footer = () => (
           {  `<${ process.env.PHENOMIC_NAME} />` }
       </a>.
 
-      Theme inspired by <a href="https://kaihao.info/" className={ styles.phenomicReferenceName }>Kai Hao</a>.
+      Theme inspired from <a href="https://kaihao.info/" className={ styles.phenomicReferenceName }>Kai Hao</a>.
     </p>
   </footer>
 )

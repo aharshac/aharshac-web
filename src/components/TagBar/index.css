@@ -1,0 +1,12 @@
+.skills {
+  display: block;
+  padding: 0;
+
+}
+
+.skill {
+  /*margin-top: 0 !important;
+  margin-bottom: 0;*/
+  font-size: 0.9em !important;
+  font-weight: 600 !important;
+}

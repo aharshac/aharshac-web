@@ -5,8 +5,8 @@ import moment from "moment";
 
 // import Tag from '../Tag';
 
-// import ToolIconBar from '../ToolIconBar';
-import SkillBar from '../SkillBar';
+import ToolIconBar from '../ToolIconBar';
+import TagBar from '../TagBar';
 
 import styles from './index.css';
 
@@ -15,20 +15,26 @@ const truncate = (string, n) => {
   return string.replace(new RegExp(`^(\.{${n}}[^\\s]*).*`, "i"), "$1 ...");
 };
 
-const ProjectPreview = ({ __url, href, title, description, preview, thumbnail, cover, date, date_end, /*github, cizm_path, npm,*/ skills,  }) => {
+const ProjectPreview = ({ __url, href, title, description, preview, thumbnail, cover, date, date_end, github, cizm_path, npm, skills }) => {
   const img = preview || thumbnail || cover;
   const url = href || __url;
 
   const durStart = date && moment(date).isValid() ? moment(date).format('MMM YYYY') : null;
   const durEnd = date_end && moment(date_end).isValid() ? moment(date_end).format('MMM YYYY') : null;
 
-
   return (
     <div className={ styles.wrapper }>
       {
         img !== undefined &&
-        <Link to={url} target="_blank" rel="noopener noreferrer">
-          <div className={styles.imgHolder} >
+        <Link to={url} target="_blank" rel="noopener noreferrer" className={styles.imgLink}>
+          <div
+            className={styles.imgHolder}
+            style={
+              img && {
+                background: `url(${img}) 50% 50% / cover`
+              }
+            }>
+            <div className={ styles.imgBlur } />
             <img src={img} alt={title} />
           </div>
         </Link>
@@ -53,34 +59,8 @@ const ProjectPreview = ({ __url, href, title, description, preview, thumbnail, c
         </div>
 
         <div className={ styles.footer }>
-          {/*}
-          <ul className={styles.skills}>
-            { skills && skills.map((skill, i) => <Tag key={i} text={skill} />) }
-          </ul>
-
-          <ul className={styles.icons}>
-            {
-              npm &&
-              <Link to={ npm } className={styles.icon} target="_blank" rel="noopener noreferrer">
-                <Svg svg={iconSvg}/>
-              </Link>
-            }
-            {
-              repo &&
-              <Link to={ repo } className={styles.icon} target="_blank" rel="noopener noreferrer">
-                <Svg svg={iconGithub} cleanup/>
-              </Link>
-            }
-            {
-              cizm_path &&
-              <Link to={ cizm_path } className={styles.icon} target="_blank" rel="noopener noreferrer">
-                <Svg svg={iconCollaborizm} cleanup/>
-              </Link>
-            }
-          </ul>
-          */}
-          { <SkillBar skills={skills} /> }
-          {/* <ToolIconBar collaborizm={cizm_path} github={github} npm={npm} /> */}
+          <TagBar tags={skills} />
+          <ToolIconBar collaborizm={cizm_path} github={github} npm={npm} style={styles.footerTools}/>
         </div>
       </div>
     </div>

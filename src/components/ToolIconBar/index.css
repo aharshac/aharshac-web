@@ -1,14 +1,22 @@
 .icons {
   padding: 0;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
+  vertical-align: bottom;
+  /*height: 2.5em;*/
+  /*margin-left: 0.5em;*/
+
+  /*@media (--mobile) {
+    float: none;
+  }*/
 }
 
 .icon {
   font-size: 1.2rem;
   color: var(--colorPrimaryDark);
-  margin: 0.15em 5px;
+  margin: 0.3em;
+
 
   transition: transform 0.15s ease-out;
   text-decoration: none !important;

@@ -8,7 +8,7 @@ import Loading from "../../components/Loading"
 import Category from "../../components/Category"
 import Button from "../../components/Button"
 import ToolIconBar from '../../components/ToolIconBar';
-import SkillBar from '../../components/SkillBar';
+import TagBar from '../../components/TagBar';
 import styles from "./index.css"
 
 import "../../styles/content.md.css"
@@ -103,8 +103,8 @@ const Project = (
                   { (durStart && durEnd) && ' - ' }
                   { durEnd && <time key={durEnd} > {durEnd} </time> }
                 </span>
-                { skills && <SkillBar skills={skills} style={styles.skills} /> }
-                { ( cizm_path || github || npm ) && <ToolIconBar style={styles.toolbar} collaborizm={cizm_path} github={github} npm={npm} width="1.4em" /> }
+                { skills && <TagBar tags={skills} style={styles.skills} /> }
+                { <ToolIconBar style={styles.toolbar} collaborizm={cizm_path} github={github} npm={npm} width="1.4em" /> }
               </div>
             }
 
