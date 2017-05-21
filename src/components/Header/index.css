@@ -74,12 +74,15 @@
   font-size: 18px;
   color:  inherit;
 
-  &:hover,
-  &:focus {
+  &:hover  { /*&:focus */
     color:  var(--colorPrimaryDark);
     opacity: 1;
     border-bottom-color: var(--colorPrimaryDark);
     /*background-color: color(var(--colorPrimaryDark) a(40%));*/
+  }
+
+  &:active {
+
   }
 
   @media (--mobile) {

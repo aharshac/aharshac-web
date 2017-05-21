@@ -11,7 +11,7 @@ const Portfolio = ({ url }) => (
   <section>
     <ColoredH2>Projects</ColoredH2>
 
-    <LatestProjects numberOfPosts={5} />
+    <LatestProjects numberOfPosts={4} />
 
     <div className={ styles.blogbutton } >
       <Link to={ url } >

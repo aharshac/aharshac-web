@@ -1,6 +1,6 @@
 import React, { PropTypes } from "react"
 
-import 'style-loader!css-loader!prismjs/themes/prism-okaidia.css'
+import 'prismjs/themes/prism-okaidia.css'
 // import 'style-loader!css-loader!prismjs/plugins/line-numbers/prism-line-numbers.css'
 import "./index.global.css"
 // import "./highlight.global.css"

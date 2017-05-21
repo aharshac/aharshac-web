@@ -92,14 +92,17 @@ const Page = (
         </ProgressiveImage>
       }
       <div className={ styles.wrapper + " " + styles.pageContent }>
-        { header }
-        <div className={ styles.body }>
-          {
-            isLoading
-            ? <Loading />
-            : <BodyContainer>{ body }</BodyContainer>
-          }
-        </div>
+        {
+          isLoading
+          ? <Loading />
+          :
+          <div>
+            { header }
+            <div className={ styles.body }>
+             <BodyContainer>{ body }</BodyContainer>
+            </div>
+          </div>
+        }
         { children }
         { footer }
       </div>

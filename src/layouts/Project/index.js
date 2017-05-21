@@ -96,45 +96,47 @@ const Project = (
 
           <div className={ styles.body }>
             <BodyContainer>
-              {
-                cizm_path &&
-                <div className={ styles.meta }>
-                  <span className={styles.duration} >
-                    { durStart && <time key={durStart} > {durStart} </time> }
-                    { (durStart && durEnd) && ' - ' }
-                    { durEnd && <time key={durEnd} > {durEnd} </time> }
-                  </span>
-                  { skills && <SkillBar skills={skills} style={styles.skills} /> }
-                  { ( cizm_path || github || npm ) && <ToolIconBar style={styles.toolbar} collaborizm={cizm_path} github={github} npm={npm} width="1.4em" /> }
-                </div>
-              }
+              <div>
+                {
+                  cizm_path &&
+                  <div className={ styles.meta }>
+                    <span className={styles.duration} >
+                      { durStart && <time key={durStart} > {durStart} </time> }
+                      { (durStart && durEnd) && ' - ' }
+                      { durEnd && <time key={durEnd} > {durEnd} </time> }
+                    </span>
+                    { skills && <SkillBar skills={skills} style={styles.skills} /> }
+                    { ( cizm_path || github || npm ) && <ToolIconBar style={styles.toolbar} collaborizm={cizm_path} github={github} npm={npm} width="1.4em" /> }
+                  </div>
+                }
 
-              {
-                cizm_path &&
-                <div>
-                  { category && <Category text={category} /> }
+                {
+                  cizm_path &&
+                  <div>
+                    { category && <Category text={category} /> }
 
-                  <div className={ styles.cizmLink }>
-                    This project is hosted on
-                    <Link to="https://www.collaborizm.com/" className={ styles.readMore + " " + styles.collaborizm } target="_blank" rel="noopener">
-                      Collaborizm.com
+                    <div className={ styles.cizmLink }>
+                      This project is hosted on
+                      <Link to="https://www.collaborizm.com/" className={ styles.readMore + " " + styles.collaborizm } target="_blank" rel="noopener">
+                        Collaborizm.com
+                      </Link>
+                    </div>
+                  </div>
+                }
+
+                { body }
+
+                {
+                  cizm_path &&
+                  <div className={ styles.cizmLink + " " + styles.cizmThread }>
+                    <hr className={ styles.cizmSeparator} />
+                    Join the project at
+                    <Link to={ cizm_path } className={ styles.readMore } target="_blank" rel="noopener">
+                      { cizm_path }
                     </Link>
                   </div>
-                </div>
-              }
-
-              { body }
-
-              {
-                cizm_path &&
-                <div className={ styles.cizmLink + " " + styles.cizmThread }>
-                  <hr className={ styles.cizmSeparator} />
-                  Join the project at
-                  <Link to={ cizm_path } className={ styles.readMore } target="_blank" rel="noopener">
-                    { cizm_path }
-                  </Link>
-                </div>
-              }
+                }
+              </div>
             </BodyContainer>
           </div>
         }

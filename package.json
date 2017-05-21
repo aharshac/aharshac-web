@@ -4,6 +4,11 @@
   "homepage": "https://alvaharsha.me/",
   "repository": "https://github.com/aharshac/aharshac.github.io.git",
   "collaborizm_id": "Hyt3y6XK",
+
+  "phenomic": {
+    "devPort": 3000
+  },
+
   "scripts": {
     "collaborizm": "babel-node -- ./collaborizm_importer/index.js",
     "lint:js": "eslint --ignore-path .gitignore --fix .",
@@ -14,7 +19,9 @@
     "pretest": "npm run lint",
     "test": "npm run build",
     "predeploy": "npm run build",
-    "deploy": "deploy.cmd"
+    "deploy": "deploy.cmd",
+    "preserve": "npm run build",
+    "serve": "serve -s dist -p 3000"
   },
   "phenomic": {
     "CNAME": true
@@ -139,6 +146,7 @@
     "redux": "^3.0.0",
     "remove-markdown": "^0.1.0",
     "responsive-loader": "^0.7.0",
+    "serve": "^5.1.5",
     "style-loader": "^0.13.0",
     "stylelint": "^7.2.0",
     "stylelint-config-css-modules": "^1.0.0",

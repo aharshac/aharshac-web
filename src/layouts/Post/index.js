@@ -76,7 +76,8 @@ const Post = (
               }
             </div>
 
-              <BodyContainer>
+            <BodyContainer>
+              <div>
                 {
                   cizm_path &&
                   <div>
@@ -112,7 +113,8 @@ const Post = (
                     </Link>
                   </div>
                 }
-              </BodyContainer>
+              </div>
+            </BodyContainer>
           </div>
         }
       </div>

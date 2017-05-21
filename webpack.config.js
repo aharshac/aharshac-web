@@ -201,6 +201,19 @@ export default (config = {}) => {
             plugins: collaborizm_plugins,
           },
         },
+
+        /* Prism.js */
+        {
+          test: /\.css$/,
+          include: path.resolve(config.cwd, "./node_modules/prismjs/themes/"),
+          loader: ExtractTextPlugin.extract({
+            fallback: "style-loader",
+            use: [
+              "css-loader",
+              "postcss-loader",
+            ],
+          }),
+        },
       ],
     },
 
