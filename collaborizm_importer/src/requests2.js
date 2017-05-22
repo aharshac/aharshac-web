@@ -61,6 +61,7 @@ const getSingleProject = (project_id, collaborizm_id, onFinish) => {
     try {
       json = JSON.parse(body);
     } catch (e) {
+            console.log(e);
       return onFinish(true, null);
     }
 
@@ -88,10 +89,30 @@ const getProjects = (collaborizm_id, callback) => {
       return callback(false);
     }
 
-    if (!(json && json[collaborizm_id] && json[collaborizm_id].owner)) return callback(false);
+    if (!(json && json[collaborizm_id])) return callback(false);
 
     const ids = [];
-    json[collaborizm_id].owner.forEach(object => ids.push(object.id));
+    const { owner, teamMember } = json[collaborizm_id];
+
+    // Add all self owned projects' ID's
+    if (owner) {
+      owner.forEach(object => ids.push(object.id));
+    }
+
+
+    // Add projects of others, but with admin priviledges.
+    if (teamMember) {
+      teamMember.forEach(project => {
+        const { id } = project;
+
+        if (project.adminsCached && project.adminsCached.length > 0) {
+          project.adminsCached.forEach(object => {
+            const { admin, approved, from, item, itemType } = object;
+            if (admin && approved && from === collaborizm_id && itemType === "project" && item === id) ids.push(id);
+          });
+        }
+      });
+    }
 
     const fetch = (project_id, onFinish) => {
       getSingleProject(project_id, collaborizm_id, onFinish);

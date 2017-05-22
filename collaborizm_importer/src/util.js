@@ -58,11 +58,17 @@ const formatThread = (thread, collaborizm_id) => {
 //  about_text, created_on, headline, id, is_public, leader_id, modifiied_on, name, photo_profile.public_id, photo_cover.public_id, summary
 const formatProject = (project, collaborizm_id) => {
   if (!project) return false;
-  const { about_text, created_on, headline, id, is_public, leader_id, modified_on, name, photo_profile, photo_cover, summary } = project;
+  const { about_text, created_on, headline, id, is_public, leader_id, leaderCached, modified_on, name, photo_profile, photo_cover, summary } = project;
 
   if (!(about_text && created_on && headline && id  && leader_id && modified_on
     && name && photo_profile && photo_cover) ) return; // && summary && is_public
-  if (leader_id !== collaborizm_id) return;
+
+  let assoc_id = '', assoc_name = '';
+  if (leader_id !== collaborizm_id && leaderCached) {
+    if (!leaderCached.id || !leaderCached.first_name) return;
+    assoc_id = leaderCached.id;
+    assoc_name = leaderCached.first_name + " " +leaderCached.last_name;
+  }
 
   const stripped_title = stripTitle(name);
   const route = stripped_title ? `portfolio/${stripped_title}.md` : null;
@@ -80,6 +86,8 @@ const formatProject = (project, collaborizm_id) => {
     published: is_public,
     cover: photo_cover.public_id,
     thumbnail: photo_profile.public_id,
+    assoc_id,
+    assoc_name,
     layout: 'Project',
   }
 };
@@ -103,4 +111,4 @@ const isCizmDateNewer = (dateFile, dateCizm) => {
   return momentCizm.isAfter(momentFile);
 };
 
-export { formatThread, formatProject, removeText, isCizmDateNewer };
+export { formatThread, formatProject, removeText, isCizmDateNewer, prune, stripTitle };
