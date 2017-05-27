@@ -9,9 +9,14 @@
   line-height: 1.6em;
   font-size: 0.9em;
   font-weight: 600;
-  margin: 0.5em;
+  /*margin: 0.5em;*/
+  margin: 0 0.8em 0.8em 0;
   white-space: nowrap;
   box-shadow: 1px 1px 2px #bbb;
+
+  &:hover {
+    /*box-shadow: 0px 2px 4px #bbb, 2px 2px 2px #bbb;*/
+  }
 
   & > span {
     margin-right: 0.5em;

@@ -4,13 +4,16 @@ import Helmet from 'react-helmet';
 import LatestProjects from '../../components/LatestProjects';
 import Page from '../Page';
 
-const Portfolio = props => (
-  <Page {...props}>
-    <Helmet
-      title="Harsha's Portfolio"
-      />
-    <LatestProjects numberOfPosts={Infinity}/>
-  </Page>
-);
+import metadata from '../../metadata';
+const { title,  } = metadata;
+
+const Portfolio = props => {
+  return (
+    <Page {...props}>
+      <Helmet title={`${title}  —  Portfolio`} />
+      <LatestProjects numberOfPosts={Infinity}/>
+    </Page>
+  );
+};
 
 export default Portfolio;

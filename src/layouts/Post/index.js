@@ -1,10 +1,11 @@
 import React, { PropTypes } from "react"
-import Helmet from "react-helmet"
 import warning from "warning"
-import { BodyContainer, joinUri, Link } from "phenomic"
+import { BodyContainer, Link } from "phenomic"
 
 import Loading from "../../components/Loading"
 import Category from "../../components/Category"
+import PageHead from "../../components/PageHead"
+
 import styles from "./index.css"
 
 import "../../styles/content.md.css"
@@ -27,38 +28,14 @@ const Post = (
     `Your page '${ __filename }' needs a title`
   )
 
-  const metaTitle = head.metaTitle ? head.metaTitle : head.title
 
-  const socialImage = head.hero && head.hero.match("://") ? head.hero
-    : joinUri(process.env.PHENOMIC_USER_URL, head.hero)
+  const { cizm_path, category, description, title, metaTitle, date, hero } = head;
 
-  const cizm_path = head.cizm_path;
-  const category = head.category;
-  const description = head.description;
-
-  const meta = [
-    { property: "og:type", content: "article" },
-    { property: "og:title", content: metaTitle },
-    {
-      property: "og:url",
-      content: joinUri(process.env.PHENOMIC_USER_URL, __url),
-    },
-    { property: "og:image", content: socialImage },
-    { property: "og:description", content: description },
-    { name: "twitter:card", content: "summary" },
-    { name: "twitter:title", content: metaTitle },
-    { name: "twitter:creator", content: `@${ twitter_id }` },
-    { name: "twitter:description", content: description },
-    { name: "twitter:image", content: socialImage },
-    { name: "description", content: description },
-  ]
-
-  const pageDate = head.date ? new Date(head.date) : null;
-  const hero = head.hero ? head.hero : null;
+  const pageDate = date ? new Date(date) : null;
 
   return (
     <div className={ styles.page }>
-      <Helmet title={ metaTitle } meta={ meta } />
+      <PageHead title={title} metaTitle={metaTitle} hero={hero} url={__url} description={description} twitter={twitter_id} />
 
       <div className={ styles.wrapper + " " + styles.pageContent }>
         {

@@ -1,14 +1,16 @@
 import React, { PropTypes } from "react"
-import Helmet from "react-helmet"
 import warning from "warning"
-import { BodyContainer, joinUri, Link } from "phenomic"
+import { BodyContainer, Link } from "phenomic"
 import moment from "moment";
 
 import Loading from "../../components/Loading"
 import Category from "../../components/Category"
 import Button from "../../components/Button"
+import Emoji from "../../components/Emoji"
 import ToolIconBar from '../../components/ToolIconBar';
 import TagBar from '../../components/TagBar';
+import PageHead from '../../components/PageHead';
+
 import styles from "./index.css"
 
 import "../../styles/content.md.css"
@@ -16,11 +18,7 @@ import "../../styles/table.md.css"
 
 const Project = (
   {
-    isLoading,
-    __filename,
-    __url,
-    head,
-    body,
+    isLoading, __filename, __url, head, body,
   },
   {
     metadata: { networks: { twitter_id } },
@@ -31,30 +29,10 @@ const Project = (
     `Your page '${ __filename }' needs a title`
   )
 
-  const metaTitle = head.metaTitle ? head.metaTitle : head.title
-
-  const socialImage = head.hero && head.hero.match("://") ? head.hero
-    : joinUri(process.env.PHENOMIC_USER_URL, head.hero)
-
-  const description = head.description;
-
-  const meta = [
-    { property: "og:type", content: "article" },
-    { property: "og:title", content: metaTitle },
-    { property: "og:url", content: joinUri(process.env.PHENOMIC_USER_URL, __url), },
-    { property: "og:image", content: socialImage },
-    { property: "og:description", content: description },
-    { name: "twitter:card", content: "summary" },
-    { name: "twitter:title", content: metaTitle },
-    { name: "twitter:creator", content: `@${ twitter_id }` },
-    { name: "twitter:description", content: description },
-    { name: "twitter:image", content: socialImage },
-    { name: "description", content: description },
-  ]
-
-
-
-  const { cizm_path, published, cta, category, cover, hero, date_end, date, skills, github, npm } = head;
+  const {
+    title, metaTitle, description,
+    cizm_path, published, cta, category, cover, hero, date_end, date, skills, github, npm
+  } = head;
 
 
   const project_path = (cizm_path && published) ? cizm_path : null;
@@ -65,7 +43,7 @@ const Project = (
 
   return (
     <div className={ styles.page }>
-      <Helmet title={ metaTitle } meta={ meta } />
+      <PageHead title={title} metaTitle={metaTitle} hero={hero} url={__url} description={description} twitter={twitter_id} />
 
       <div
         className={ styles.hero }
@@ -75,7 +53,7 @@ const Project = (
       >
         <div className={ styles.header }>
           <div className={ styles.wrapper }>
-            <h1 className={ styles.heading }>{ head.title }</h1>
+            <h1 className={ styles.heading }>{ title }</h1>
             { description && <h2 className={ styles.description }>{ description }</h2> }
             {
               (cta_title || (cta && cta.link && cta.label)) &&
@@ -105,6 +83,8 @@ const Project = (
                 </span>
                 { skills && <TagBar tags={skills} style={styles.skills} /> }
                 { <ToolIconBar style={styles.toolbar} collaborizm={cizm_path} github={github} npm={npm} width="1.4em" /> }
+
+              { (cizm_path || github) &&  <span> <Emoji text="heart" />  Open Source  <Emoji text="heart" /> </span> }
               </div>
             }
 

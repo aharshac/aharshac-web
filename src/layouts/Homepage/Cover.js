@@ -18,7 +18,7 @@ import metadata from '../../metadata';
 
 import styles from './index.css';
 
-const { avatar, networks: { collaborizm, facebook, github, linkedin, npm, stackoverflow, twitter }, coverItems } = metadata;
+const { avatar, title, networks: { collaborizm, facebook, github, linkedin, npm, stackoverflow, twitter }, coverItems } = metadata;
 
 const Cover = () => (
   <ProgressiveImage
@@ -29,7 +29,7 @@ const Cover = () => (
     isCover
     >
     <div className={styles.cover}>
-      <img className={styles.avatar} src={avatar} alt="Harsha Alva"/>
+      <img className={styles.avatar} src={avatar} alt={title} />
       <div className={styles.text} title="Mechanical Engineer + Software Developer"> ME + SFTDEV </div>
       <div className={styles.buttonGroup}>
         { coverItems.collaborizm && <IconLink href={collaborizm} icon={iconCollaborizm}> Collaborizm </IconLink> }

@@ -1,6 +1,6 @@
 import React from "react"
-import Helmet from 'react-helmet';
 
+import PageHead from "../../components/PageHead"
 
 import Cover from "./Cover"
 import About from "./About"
@@ -15,24 +15,11 @@ import styles from "./index.css"
 import metadata from '../../metadata'
 const { pkg, description, title, avatar, networks:{ twitter_id, blog, portfolio } } = metadata
 
-const meta = [
-  { property: "og:type", content: "article" },
-  { property: "og:title", content: title },
-  { property: "og:url", content: pkg.homepage },
-  { property: "og:image", content: avatar },
-  { property: "og:description", content: description },
-  { name: "twitter:card", content: "summary" },
-  { name: "twitter:title", content: title },
-  { name: "twitter:creator", content: `@${ twitter_id }` },
-  { name: "twitter:description", content: description },
-  { name: "twitter:image", content: title },
-  { name: "description", content: description },
-]
-
 const Homepage = () => {
   return (
     <div>
-      <Helmet title={title} meta={meta} />
+
+      <PageHead title={title} hero={avatar} url={pkg.homepage} description={description} twitter={twitter_id} />
 
       <Cover/>
 

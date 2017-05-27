@@ -49,13 +49,13 @@
   & .imgBlur {
     display: block;
     position: absolute;
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: #ccc;
+    opacity: 0.8;
     width: 100%;
     height: 100%;
     top: 0;
     left: 0;
     z-index: 3;
-    /*filter: blur(55px);*/
   }
 
   & img {
@@ -99,7 +99,7 @@
   overflow-x: hidden;
 
   @media (--mobile) {
-    padding: 20px;
+    padding: 20px 20px 10px 20px;
   }
 }
 
@@ -149,19 +149,25 @@
 
 .footer {
   width: 100%;
-  margin-top: 0.5em;
+  margin-top: 1em;
   padding-bottom: 2px;
   display: flex;
   justify-content: space-between;
   align-self: flex-end;
+  flex-direction: column;
 
   @media (--mobile) {
     margin-top: 1em;
-    flex-direction: column;
+    /*flex-direction: column;*/
     flex-basis: auto;
   }
 }
 
+.footerSkills {
+  font-size: 0.8em;
+}
+
 .footerTools {
   align-items: flex-end;
+  justify-content: flex-start;
 }

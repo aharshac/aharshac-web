@@ -15,30 +15,29 @@ const truncate = (string, n) => {
   return string.replace(new RegExp(`^(\.{${n}}[^\\s]*).*`, "i"), "$1 ...");
 };
 
-const ProjectPreview = ({ __url, href, title, description, preview, thumbnail, cover, date, date_end, github, cizm_path, npm, skills }) => {
+const ProjectPreview = ({ __url, href, title, description, preview, thumbnail, cover, date, date_end,
+  github, cizm_path, npm, skills }) => {
+
   const img = preview || thumbnail || cover;
   const url = href || __url;
 
   const durStart = date && moment(date).isValid() ? moment(date).format('MMM YYYY') : null;
   const durEnd = date_end && moment(date_end).isValid() ? moment(date_end).format('MMM YYYY') : null;
 
+  // const skills1 = ["Node.js", "PHP", "JavaScript", "ES6", "Singing", "Dancing", "Drinking"];
+
   return (
     <div className={ styles.wrapper }>
       {
         img !== undefined &&
         <Link to={url} target="_blank" rel="noopener noreferrer" className={styles.imgLink}>
-          <div
-            className={styles.imgHolder}
-            style={
-              img && {
-                background: `url(${img}) 50% 50% / cover`
-              }
-            }>
+          <div className={styles.imgHolder} style={ img && { background: `url(${img}) 50% 50% / cover` } } >
             <div className={ styles.imgBlur } />
             <img src={img} alt={title} />
           </div>
         </Link>
       }
+
       <div className={styles.content}>
         <Link to={ url } className={ styles.title }>
           { title }
@@ -54,12 +53,12 @@ const ProjectPreview = ({ __url, href, title, description, preview, thumbnail, c
 
 
         <div className={ styles.description }>
-          { truncate(description, 90) }
+          { truncate(description, 140) }
           { " " }
         </div>
 
         <div className={ styles.footer }>
-          <TagBar tags={skills} />
+          <TagBar tags={skills} style={styles.footerSkills} />
           <ToolIconBar collaborizm={cizm_path} github={github} npm={npm} style={styles.footerTools}/>
         </div>
       </div>

@@ -10,11 +10,12 @@ const Footer = () => (
     { /* If you like Phenomic, this is a way to share the love ;) */ }
     <p>
       Made with <Emoji text="heart" /> and
-      <a href={ process.env.PHENOMIC_HOMEPAGE } className={ styles.phenomicReferenceName }>
+      <a href={ process.env.PHENOMIC_HOMEPAGE } className={ styles.phenomicReferenceName } target="_blank" rel="noreferrer noopener">
           {  `<${ process.env.PHENOMIC_NAME} />` }
       </a>.
 
-      Theme inspired from <a href="https://kaihao.info/" className={ styles.phenomicReferenceName }>Kai Hao</a>.
+      Theme inspired from <a href="https://kaihao.info/" className={ styles.phenomicReferenceName } target="_blank" rel="noreferrer noopener">
+      Kai Hao</a>.
     </p>
   </footer>
 )
