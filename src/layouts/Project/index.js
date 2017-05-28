@@ -1,6 +1,6 @@
 import React, { PropTypes } from "react"
 import warning from "warning"
-import { BodyContainer, Link } from "phenomic"
+import { BodyContainer } from "phenomic"
 import moment from "moment";
 
 import Loading from "../../components/Loading"
@@ -10,6 +10,7 @@ import Emoji from "../../components/Emoji"
 import ToolIconBar from '../../components/ToolIconBar';
 import TagBar from '../../components/TagBar';
 import PageHead from '../../components/PageHead';
+import LinkExt from '../../components/LinkExt';
 
 import styles from "./index.css"
 
@@ -58,11 +59,11 @@ const Project = (
             { description && <h2 className={ styles.description }>{ description }</h2> }
             {
               (cta_title || (cta && cta.link && cta.label)) &&
-              <Link to={ project_path || cta.link } target="_blank" rel="noopener">
+              <LinkExt to={ project_path || cta.link } >
                 <Button className={ styles.cta }>
                   { cta_title || cta.label }
                 </Button>
-              </Link>
+              </LinkExt>
             }
           </div>
         </div>
@@ -89,9 +90,9 @@ const Project = (
               { (assoc_id && assoc_name) &&
                 <p className={styles.metaP}>
                   {`In association with`}
-                  <Link to={`https://www.collaborizm.com/profile/${assoc_id}`} className={ styles.readMore + " " + styles.collaborizm } target="_blank" rel="noopener">
+                  <LinkExt to={`https://www.collaborizm.com/profile/${assoc_id}`} className={ styles.readMore + " " + styles.collaborizm }>
                     { assoc_name }
-                  </Link>
+                  </LinkExt>
                 </p>
               }
               </div>
@@ -104,9 +105,9 @@ const Project = (
 
                 <div className={ styles.cizmLink }>
                   This project is hosted on
-                  <Link to="https://www.collaborizm.com/" className={ styles.readMore + " " + styles.collaborizm } target="_blank" rel="noopener">
+                  <LinkExt to="https://www.collaborizm.com/" className={ styles.readMore + " " + styles.collaborizm } >
                     Collaborizm.com
-                  </Link>
+                  </LinkExt>
                 </div>
               </div>
             }
@@ -120,9 +121,9 @@ const Project = (
               <div className={ styles.cizmLink + " " + styles.cizmThread }>
                 <hr className={ styles.cizmSeparator} />
                 Join the project at
-                <Link to={ cizm_path } className={ styles.readMore } target="_blank" rel="noopener">
+                <LinkExt to={ cizm_path } className={ styles.readMore } >
                   { cizm_path }
-                </Link>
+                </LinkExt>
               </div>
             }
           </div>

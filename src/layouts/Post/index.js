@@ -1,10 +1,11 @@
 import React, { PropTypes } from "react"
 import warning from "warning"
-import { BodyContainer, Link } from "phenomic"
+import { BodyContainer } from "phenomic"
 
 import Loading from "../../components/Loading"
 import Category from "../../components/Category"
 import PageHead from "../../components/PageHead"
+import LinkExt from '../../components/LinkExt';
 
 import styles from "./index.css"
 
@@ -59,9 +60,9 @@ const Post = (
 
                 <div className={ styles.cizmLink }>
                   This post is auto-generated from a thread hosted on
-                  <Link to="https://www.collaborizm.com/" className={ styles.readMore + " " + styles.collaborizm } target="_blank" rel="noopener">
+                  <LinkExt to="https://www.collaborizm.com/" className={ styles.readMore + " " + styles.collaborizm }>
                     Collaborizm.com
-                  </Link>
+                  </LinkExt>
                 </div>
 
                 {
@@ -87,9 +88,9 @@ const Post = (
               <div className={ styles.cizmLink + " " + styles.cizmThread }>
                 <hr className={ styles.cizmSeparator} />
                 Join the conversation at
-                <Link to={ cizm_path } className={ styles.readMore } target="_blank" rel="noopener">
+                <LinkExt to={ cizm_path } className={ styles.readMore }>
                   { cizm_path }
-                </Link>
+                </LinkExt>
               </div>
             }
           </div>

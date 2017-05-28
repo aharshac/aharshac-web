@@ -11,7 +11,7 @@ const LatestPosts = (props, { collection }) => {
   const maxCount = props.numberOfPosts || defaultNumberOfPosts;
 
   const sortedPosts = enhanceCollection(collection, {
-    filter: { layout: "Post" },
+    filter: ({ layout, published }) =>  layout === "Post" && (published === undefined || published),
     sort: "date",
     reverse: true,
   });

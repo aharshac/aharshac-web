@@ -10,6 +10,7 @@ title: Add a Table of Contents to make your projects easier for beginners.
 stripped_title: add-a-table-of-contents-to-make-your-projects-easier-for-beginners
 route: blog/add-a-table-of-contents-to-make-your-projects-easier-for-beginners.md
 layout: Post
+preview: https://res.cloudinary.com/collabizm/image/upload/c_fill,w_300,h_200,q_auto,f_auto/v1/project_photos/y8wndzmzn5cdh23sbtxp
 ---
 It's overwhelming for new project members to follow a project in the correct order. So I have made a **Table of Contents** for my @[The Node Bot](project/r1dE09adg) project. All are welcome to join and be a part of it.
 

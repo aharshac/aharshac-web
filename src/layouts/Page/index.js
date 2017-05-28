@@ -1,11 +1,12 @@
 import React, { PropTypes } from "react"
 import warning from "warning"
-import { BodyContainer, Link } from "phenomic"
+import { BodyContainer } from "phenomic"
 
 import ProgressiveImage from '../../components/ProgressiveImage';
 import Button from "../../components/Button"
 import Loading from "../../components/Loading"
 import PageHead from "../../components/PageHead"
+import LinkExt from "../../components/LinkExt"
 
 import styles from "./index.css"
 
@@ -47,7 +48,7 @@ const Page = (
           background: `#111 url(${ head.hero }) 50% 50% / cover`,
         }}
       >*/}
-      
+
       {
         showHeader &&
         <ProgressiveImage
@@ -61,11 +62,11 @@ const Page = (
               <h1 className={ styles.heading }>{ head.title }</h1>
               {
                 head.cta &&
-                <Link to={ head.cta.link }>
+                <LinkExt to={ head.cta.link }>
                   <Button className={ styles.cta } light { ...head.cta.props }>
                     { head.cta.label }
                   </Button>
-                </Link>
+                </LinkExt>
               }
             </div>
           </div>

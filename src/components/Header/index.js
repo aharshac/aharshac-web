@@ -2,6 +2,8 @@ import React, { PropTypes } from "react"
 import { Link } from "phenomic"
 import Svg from "react-svg-inline"
 
+import LinkExt from '../LinkExt';
+
 import iconGithub from '../../assets/icons/iconmonstr-github-1.svg';
 import iconTwitter from '../../assets/icons/iconmonstr-twitter-1.svg';
 import iconStackOverflow from '../../assets/icons/stackoverflow.svg';
@@ -14,10 +16,10 @@ import styles from "./index.css"
 
 
 const _link = (to, svg, title) =>
-  <Link to={ to } className={ `${styles.link} hideIfMobile` } target="_blank" rel="noopener">
+  <LinkExt to={ to } className={ `${styles.link} hideIfMobile` }>
     <Svg svg={ svg } cleanup />
     <span className="hideIfMobile">{title}</span>
-  </Link>;
+  </LinkExt>;
 
 const Header = (props, { metadata: { title, networks: { blog, portfolio, collaborizm,
     facebook, github, linkedin, npm, stackoverflow, twitter }

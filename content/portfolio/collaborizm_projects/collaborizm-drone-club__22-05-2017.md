@@ -24,7 +24,7 @@ If you're new to drones, or are stuck on some part of your build, this is a plac
 If you have built drones or just have some knowledge you could contribute, please join and give back to the community by answering questions.
 
 This is also a place you can show off what you made to inspire others. Did you design a unique frame or camera mount for example, well post it and get some feedback! *For example I just made this flight video after testing the TX03 for Harsha*
-@[youtube](​https://youtu.be/Mnsyn6JxQHM) 
+@[youtube](​https://youtu.be/Mnsyn6JxQHM)
 
 ![droneClubSuggestionStart.png](czm://ilnuzka5kaqmsvqjzwxn)
 
@@ -32,8 +32,8 @@ This is also a place you can show off what you made to inspire others. Did you d
 
 >
 
-# You are the reason this project exists 
-## So I'll be counting on you guys to help out as much as you can to make this club successful. 
+# You are the reason this project exists
+## So I'll be counting on you guys to help out as much as you can to make this club successful.
 Anyone can help by either:
 1. Creating a tutorial post in the project on your area of expertise, for example a post about ===>> Differences between 25mW / 50mW / 200mW transmitters and PAL vs NTFC.
 2. Answer questions posted by others
@@ -54,8 +54,7 @@ Here are some threads out of a quadcopter building project I think others could 
 
 I'm hoping with your help, this list over time will become huge and act as a great resource for everyone to learn and make better drones! I want to set some goals to keep this club moving forward, so to start ==>
 
-## Our first goal is to create 5 helpful posts consisting of build or installation guides / tutorials / tips / etc... 
+## Our first goal is to create 5 helpful posts consisting of build or installation guides / tutorials / tips / etc...
 *(the posts could be referencing helpful threads in other Collaborizm projects, on your own profiles, etc..., so if you see something out there, post a link to the thread here, and I'll include it in the project)*
 
 ## Second goal would be to have answered 5 questions.
-

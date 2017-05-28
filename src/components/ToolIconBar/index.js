@@ -1,7 +1,7 @@
 import React, { PropTypes } from 'react';
-import { Link } from "phenomic";
 import Svg from 'react-svg-inline';
 
+import LinkExt from '../LinkExt';
 import styles from './index.css';
 
 import iconGithub from '../../assets/icons/iconmonstr-github-1.svg';
@@ -15,21 +15,21 @@ const ToolIconBar = ({ npm, github, collaborizm, width = "1.2em", style }) => {
     <ul className={styles.icons + " " + style} >
       {
         npm &&
-        <Link to={ npm } className={styles.icon} target="_blank" rel="noopener noreferrer">
+        <LinkExt to={ npm } className={styles.icon} rel="noopener noreferrer">
           <Svg svg={iconSvg} style={svgStyle} />
-        </Link>
+        </LinkExt>
       }
       {
         github &&
-        <Link to={ github } className={styles.icon} target="_blank" rel="noopener noreferrer">
+        <LinkExt to={ github } className={styles.icon} rel="noopener noreferrer">
           <Svg svg={iconGithub} cleanup style={svgStyle} />
-        </Link>
+        </LinkExt>
       }
       {
         collaborizm &&
-        <Link to={ collaborizm } className={styles.icon} target="_blank" rel="noopener noreferrer">
+        <LinkExt to={ collaborizm } className={styles.icon} rel="noopener noreferrer">
           <Svg svg={iconCollaborizm} cleanup style={svgStyle} />
-        </Link>
+        </LinkExt>
       }
     </ul>
   );
