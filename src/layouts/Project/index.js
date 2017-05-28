@@ -89,7 +89,7 @@ const Project = (
               { (cizm_path || github) &&  <p className={styles.metaP}> <Emoji text="heart" />  Open Source  <Emoji text="heart" /> </p> }
               { (assoc_id && assoc_name) &&
                 <p className={styles.metaP}>
-                  {`In association with`}
+                  {`With`}
                   <LinkExt to={`https://www.collaborizm.com/profile/${assoc_id}`} className={ styles.readMore + " " + styles.collaborizm }>
                     { assoc_name }
                   </LinkExt>

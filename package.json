@@ -5,7 +5,8 @@
   "repository": "https://github.com/aharshac/aharshac.github.io.git",
   "collaborizm_id": "Hyt3y6XK",
   "phenomic": {
-    "CNAME": true
+    "CNAME": true,
+    "offline": true
   },
   "scripts": {
     "collaborizm": "babel-node -- ./collaborizm_importer/index.js",
