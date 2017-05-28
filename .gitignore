@@ -10,3 +10,7 @@ dist
 **/czp/
 
 collaborizm_tasklists
+
+bkp/
+
+npm-debug*

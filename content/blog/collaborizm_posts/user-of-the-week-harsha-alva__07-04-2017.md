@@ -6,7 +6,7 @@ date: '2017-04-07T16:49:59.133Z'
 description: >-
   This Week's User of the Week: @harsha.alva Harsha Alva. This 22 Year Old
   #Engineer has dominated the Collaborizm ranks and brought great…
-title: 'User of the Week: Harsha Alva '
+title: 'User of the Week: Harsha Alva'
 stripped_title: user-of-the-week-harsha-alva
 route: blog/user-of-the-week-harsha-alva.md
 layout: Post

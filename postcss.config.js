@@ -1,7 +1,7 @@
 module.exports = (config) => [
     require("stylelint")(),
     require("postcss-cssnext")({
-      browsers: "last 2 versions",
+      browsers: "last 5 versions",
       features: {
         customProperties: {
           variables: {
@@ -26,8 +26,9 @@ module.exports = (config) => [
         }
       },
     }),
-    require("postcss-reporter")(),
+    require('cssnano')({autoprefixer: false, zindex: false}),
+    require("postcss-reporter")({ clearMessages: true, plugins: ['!postcss-discard-empty'] }),
     ...!config.production ? [
-      require("postcss-browser-reporter")(),
+      require("postcss-browser-reporter")({ clearMessages: true, plugins: ['!postcss-discard-empty'] }),
     ] : [],
 ]

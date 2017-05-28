@@ -13,6 +13,8 @@ route: portfolio/multi-function-cnc-machine.md
 published: true
 cover: covers/ajufmuqlsdjdpzkeplfn
 thumbnail: project_photos/ujd6p0zhg73z914u1ltu
+assoc_id: ''
+assoc_name: ''
 layout: Project
 ---
 # Project Overview

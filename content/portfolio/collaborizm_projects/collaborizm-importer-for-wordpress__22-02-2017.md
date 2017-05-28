@@ -13,6 +13,8 @@ route: portfolio/collaborizm-importer-for-wordpress.md
 published: true
 cover: covers/q5xuucexxxmh9z7lrlig
 thumbnail: project_photos/gxte5inbup5pa1bwl6io
+assoc_id: ''
+assoc_name: ''
 layout: Project
 ---
 # Project Overview

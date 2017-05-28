@@ -43,13 +43,13 @@ const preSoundcloudReplacer = (whole, soundCloudUrl) => {
 };
 
 const preAtRegex = /@\[([^\]]*)\]\(([\w-]*)\)/g;
-const preAtReplacer = (whole, name, id) => `~span~class~${uiClass.atProfile}~[${name}](https://www.collaborizm.com//profile/${id})~span~`;
+const preAtReplacer = (whole, name, id) => `~span~class~${uiClass.atProfile}~[${name}](https://www.collaborizm.com/profile/${id})~span~`;
 
 const preAtProjectRegex = /@\[([^\]]*)\]\(project\/([\w\-~]*)\)/g;
-const preAtProjectReplacer = (whole, name, id) => `~span~class~${uiClass.atProject}~[${name}](https://www.collaborizm.com//project/${id})~span~`;
+const preAtProjectReplacer = (whole, name, id) => `~span~class~${uiClass.atProject}~[${name}](https://www.collaborizm.com/project/${id})~span~`;
 
 const preHashtagRegex = /\B#\[([^\]]*)\]\(([\s\w\-~]*)\)/g;
-const preHashtagReplacer = (whole, name, id) => `~span~class~${uiClass.hashTag}~[${name}](https://www.collaborizm.com//discover/${encodeURIComponent(id)})~span~`;
+const preHashtagReplacer = (whole, name, id) => `~span~class~${uiClass.hashTag}~[${name}](https://www.collaborizm.com/discover/${encodeURIComponent(id)})~span~`;
 
 const preAdhocRegex = /\B#([a-zA-Z0-9\-_~&\+]+)/g;
 const preAdhocReplacer = (whole, tag) => `~span~class~${uiClass.adHocTag}~#${tag}~span~`;

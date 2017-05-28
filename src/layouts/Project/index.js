@@ -31,7 +31,8 @@ const Project = (
 
   const {
     title, metaTitle, description,
-    cizm_path, published, cta, category, cover, hero, date_end, date, skills, github, npm
+    cizm_path, published, cta, category, cover, hero, date_end, date, skills, github, npm,
+    assoc_id, assoc_name,
   } = head;
 
 
@@ -84,7 +85,15 @@ const Project = (
                 { skills && <TagBar tags={skills} style={styles.skills} /> }
                 { <ToolIconBar style={styles.toolbar} collaborizm={cizm_path} github={github} npm={npm} width="1.4em" /> }
 
-              { (cizm_path || github) &&  <span> <Emoji text="heart" />  Open Source  <Emoji text="heart" /> </span> }
+              { (cizm_path || github) &&  <p className={styles.metaP}> <Emoji text="heart" />  Open Source  <Emoji text="heart" /> </p> }
+              { (assoc_id && assoc_name) &&
+                <p className={styles.metaP}>
+                  {`In association with`}
+                  <Link to={`https://www.collaborizm.com/profile/${assoc_id}`} className={ styles.readMore + " " + styles.collaborizm } target="_blank" rel="noopener">
+                    { assoc_name }
+                  </Link>
+                </p>
+              }
               </div>
             }
 

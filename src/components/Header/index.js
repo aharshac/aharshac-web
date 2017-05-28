@@ -33,7 +33,7 @@ const Header = (props, { metadata: { title, networks: { blog, portfolio, collabo
           { title }
         </Link>
       </div>
-      
+
       <div className={ styles.navPart2 }>
         { headerItems.portfolio && <Link className={styles.link} to={portfolio}> Portfolio</Link> }
 

@@ -2,7 +2,7 @@
 cizm_project_id: r1dE09adg
 cizm_path: 'https://www.collaborizm.com/project/r1dE09adg'
 date: '2017-03-30T11:43:23.720Z'
-date_modified: '2017-05-13T20:46:19.835Z'
+date_modified: '2017-05-28T07:41:57.587Z'
 summary: 'Raspberry Pi on wheels, powered by Node.js'
 description: 'Raspberry Pi on wheels, powered by Node.js.'
 title: The Node Bot
@@ -11,6 +11,8 @@ route: portfolio/the-node-bot.md
 published: true
 cover: covers/ycpda9bxhvwzojp6nwhk
 thumbnail: project_photos/spayhwidqfrqg1clkse6
+assoc_id: ''
+assoc_name: ''
 layout: Project
 ---
 # Project Overview

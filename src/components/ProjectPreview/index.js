@@ -28,13 +28,20 @@ const ProjectPreview = ({ __url, href, title, description, preview, thumbnail, c
 
   return (
     <div className={ styles.wrapper }>
-      {
+      {/*
         img !== undefined &&
         <Link to={url} target="_blank" rel="noopener noreferrer" className={styles.imgLink}>
           <div className={styles.imgHolder} style={ img && { background: `url(${img}) 50% 50% / cover` } } >
             <div className={ styles.imgBlur } />
             <img src={img} alt={title} />
           </div>
+        </Link>
+      */}
+      {
+        img !== undefined &&
+        <Link to={url} target="_blank" rel="noopener noreferrer" className={styles.imgLink}>
+          <div className={ styles.imgBlur } style={ img && { background: `url(${img}) 50% 50% / cover` } } />
+          <img className={ styles.imgThumb } src={img} alt={title} />
         </Link>
       }
 

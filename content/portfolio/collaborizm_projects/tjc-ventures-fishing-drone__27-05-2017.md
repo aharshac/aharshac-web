@@ -2,7 +2,7 @@
 cizm_project_id: By0CRgG5x
 cizm_path: 'https://www.collaborizm.com/project/By0CRgG5x'
 date: '2017-02-27T19:32:37.727Z'
-date_modified: '2017-05-17T10:24:51.220Z'
+date_modified: '2017-05-27T13:43:44.018Z'
 summary: TJC Ventures Fishing Drone
 description: TJC Ventures Fishing Drone
 title: TJC Ventures Fishing Drone
@@ -11,6 +11,8 @@ route: portfolio/tjc-ventures-fishing-drone.md
 published: true
 cover: covers/a4krxi8nc1lxiecpaysd
 thumbnail: project_photos/ch3hy72xmeclfuekgyl1
+assoc_id: ''
+assoc_name: ''
 layout: Project
 ---
 # Project Overview

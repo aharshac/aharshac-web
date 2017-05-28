@@ -4,7 +4,8 @@ import stripMd from "remove-markdown";
 // import prune from './prune';
 
 const getDescription = (text) => {
-  return prune(stripMd(text), 140, "…");
+  if (!text) return '';
+  return prune(stripMd(text.trim()), 140, "…");
 }
 
 const prune = (s: string, maxLength: number, end: string = "…"): string => {
@@ -47,7 +48,7 @@ const formatThread = (thread, collaborizm_id) => {
     category,
     date: createdOn,
     description: getDescription(text),
-    title,
+    title: title.trim(),
     stripped_title,
     text,
     route,
@@ -67,7 +68,7 @@ const formatProject = (project, collaborizm_id) => {
   if (leader_id !== collaborizm_id && leaderCached) {
     if (!leaderCached.id || !leaderCached.first_name) return;
     assoc_id = leaderCached.id;
-    assoc_name = leaderCached.first_name + " " +leaderCached.last_name;
+    assoc_name = leaderCached.first_name + " " + leaderCached.last_name;
   }
 
   const stripped_title = stripTitle(name);
@@ -77,9 +78,9 @@ const formatProject = (project, collaborizm_id) => {
     cizm_path: `https://www.collaborizm.com/project/${id}`,
     date: created_on,
     date_modified: modified_on,
-    summary: summary ? summary : '',
-    description: headline,
-    title: name,
+    summary: summary ? summary.trim() : '',
+    description: headline.trim(),
+    title: name.trim(),
     stripped_title,
     text: about_text,
     route,

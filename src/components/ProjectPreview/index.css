@@ -11,7 +11,6 @@
   background-color: #fff;
   transition: all 0.15s ease-out;
   margin: 1rem auto;
-  /*height: var(--imgHeight);*/
   height: auto;
 
   &:hover {
@@ -29,21 +28,100 @@
 .imgLink {
   border-bottom: none !important;
   text-decoration: none;
+
+  display: flex;
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: var(--imgWidth);
+  justify-content: center;
+  align-items: center;
+
+  width: var(--imgWidth);
+  height: auto;
+  min-height: var(--imgHeight);
+  position: relative;
+  overflow: hidden;
+
+  border-right: 1px solid #EEE;
+  font-size: 0;
+
+  & .imgBlur {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    background-color: #ccc;
+
+    margin: auto;
+    width: 100%;
+    height: 100%;
+
+    filter: blur(5px);
+    -webkit-filter: blur(5px);
+    -moz-filter: blur(5px);
+    -o-filter: blur(5px);
+    -ms-filter: blur(5px);
+
+    transform: scale(1.1);
+  }
+
+  & .imgThumb {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+
+    -moz-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    object-fit: fill;
+
+    &:hover {
+      transform: scale(1.2);
+      text-decoration: none;
+      border: none;
+    }
+  }
+
+
+
+  @media (--mobile) {
+    width: 100%;
+    border-bottom: 1px solid #EEE;
+    border-right: none;
+
+    & .imgThumb {
+      width: auto;
+      height: 100%;
+
+      &:hover {
+        transform: none;
+      }
+    }
+  }
+}
+
+/*.imgLink {
+  border-bottom: none !important;
+  text-decoration: none;
 }
 
 .imgHolder {
   font-size: 0;
   width: var(--imgWidth);
   height: 100%;
-  flex-grow: 0;
-  flex-shrink: 0;
-  flex-basis: var(--imgWidth);
   position: relative;
   overflow: hidden;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  /*border-left: 1px solid #EEE;*/
+  /*border-left: 1px solid #EEE;
   border-right: 1px solid #EEE;
 
   & .imgBlur {
@@ -79,14 +157,14 @@
   @media (--mobile) {
     width: 100%;
     height: auto;
-    /*border-top: 1px solid #EEE;*/
+    /*border-top: 1px solid #EEE;
     border-bottom: 1px solid #EEE;
 
     & img:hover {
       transform: none;
     }
   }
-}
+}*/
 
 .content {
   display: flex;

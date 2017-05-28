@@ -8,8 +8,8 @@ import { removeText, prune, stripTitle } from './util';
 
 const path_root = path.resolve(__dirname, '../');
 const path_db = path.resolve(path_root, './db.json');
-const path_threads = path.resolve(path_root, './posts');
-const path_projects = path.resolve(path_root, './projects');
+const path_threads = path.resolve(path_root, './collaborizm_posts');
+const path_projects = path.resolve(path_root, './collaborizm_projects');
 
 
 // const placeholderProject = id => `cizm_project_${id}`;
