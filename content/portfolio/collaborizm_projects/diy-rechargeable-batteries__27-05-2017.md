@@ -16,9 +16,13 @@ thumbnail: project_photos/qfhnpwkenmkn2zsxzlgj
 assoc_id: ''
 assoc_name: ''
 layout: Project
+skills:
+- Li-ion
+- 18650
+- Electronics
 ---
 # Project Overview
-This project is a solution to problems all makers face while finding power sources for their Arduino, Raspberry Pi and other projects. 
+This project is a solution to problems all makers face while finding power sources for their Arduino, Raspberry Pi and other projects.
 
 This project attempts to reuse and recycle rechargeable Lithium Ion (Li-ion) cells from batteries found in e-Waste like laptop batteries, mobile batteries, power banks and other similar sources.
 
@@ -50,7 +54,7 @@ Large, heavy, ugly and contain lead which is harmful to health and causes brain 
 Similar to Li-ion batteries, but differ in construction and typically provide large outputs in a short period of time.     
 Prone to fire and explsion.
 ![Turnigy_5000_6S_Batt250pics.gif](czm://cehowliuehfdfkobdjrk)
- 
+
 &nbsp;
 
 # How To Receive Resume Credit
@@ -61,7 +65,7 @@ Join this project and also build a battery yourself to get resume credit.
 # Teammates & Contributors I'm Looking For
 Users who are willing to take risks and are 21+ years of age.
 
-&nbsp; 
+&nbsp;
 
 # Where I Need the Most Help
 Advice and feedback.
@@ -92,4 +96,3 @@ Your contributions will help to reuse and recycle Lithium batteries found in e-W
 3. [9V battery](https://en.wikipedia.org/wiki/Nine-volt_battery)
 4. [SLA battery](https://en.wikipedia.org/wiki/VRLA_battery)
 5. [Lithium polymer battery](https://en.wikipedia.org/wiki/Lithium_polymer_battery)
-

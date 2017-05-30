@@ -16,6 +16,10 @@ thumbnail: project_photos/ahax3iettjicnehvyaks
 assoc_id: 4kvzVlj5e
 assoc_name: Anton Voltchok
 layout: Project
+skills:
+- Quadcopter
+- FPV
+- RC
 ---
 # A place for helping you build drones, sharing ideas, & pooling knowledge.
 

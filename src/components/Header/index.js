@@ -28,10 +28,7 @@ const Header = (props, { metadata: { title, networks: { blog, portfolio, collabo
   <header className={ styles.header }>
     <nav className={ styles.nav }>
       <div className={ styles.navPart1 }>
-        <Link
-          className={ styles.home }
-          to={ "/" }
-        >
+        <Link className={ styles.link + " " + styles.home } to={ "/" } >
           { title }
         </Link>
       </div>

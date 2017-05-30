@@ -192,6 +192,7 @@
 .footerTools {
   align-items: flex-end;
   justify-content: flex-start;
+  margin-top: 5px;
 }
 
 .metaP {

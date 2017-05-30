@@ -14,9 +14,9 @@ const ToolIconBar = ({ npm, github, collaborizm, width = "1.2em", style }) => {
   return (
     <ul className={styles.icons + " " + style} >
       {
-        npm &&
-        <LinkExt to={ npm } className={styles.icon} rel="noopener noreferrer">
-          <Svg svg={iconSvg} style={svgStyle} />
+        collaborizm &&
+        <LinkExt to={ collaborizm } className={styles.icon} rel="noopener noreferrer">
+          <Svg svg={iconCollaborizm} cleanup style={svgStyle} />
         </LinkExt>
       }
       {
@@ -26,9 +26,9 @@ const ToolIconBar = ({ npm, github, collaborizm, width = "1.2em", style }) => {
         </LinkExt>
       }
       {
-        collaborizm &&
-        <LinkExt to={ collaborizm } className={styles.icon} rel="noopener noreferrer">
-          <Svg svg={iconCollaborizm} cleanup style={svgStyle} />
+        npm &&
+        <LinkExt to={ npm } className={styles.icon} rel="noopener noreferrer">
+          <Svg svg={iconSvg} style={svgStyle} />
         </LinkExt>
       }
     </ul>

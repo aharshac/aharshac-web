@@ -14,6 +14,10 @@ thumbnail: project_photos/ch3hy72xmeclfuekgyl1
 assoc_id: ''
 assoc_name: ''
 layout: Project
+skills:
+- Quadcopter
+- FPV
+- RC
 ---
 # Project Overview
 
@@ -29,19 +33,19 @@ Dismantled F450 with CC3D to make way for APM 2.6
 
 # Goals of Prototype
 
-A drone that can be launched into the air and controlled remotely. 
+A drone that can be launched into the air and controlled remotely.
 
-Drone can travel over water. 
+Drone can travel over water.
 
-Drone can release a fishing line. 
+Drone can release a fishing line.
 
 Drone can hook fish then fly back to base.
 
 # Ownership of IP
 
-TJC Ventures owns all IP. Collaborizm has been brought in for aid with our Research and Development process. 
+TJC Ventures owns all IP. Collaborizm has been brought in for aid with our Research and Development process.
 
-Collaborizm Team will be compensated with the sponsorship dollars provided by our team. 
+Collaborizm Team will be compensated with the sponsorship dollars provided by our team.
 
 # Core Team
 

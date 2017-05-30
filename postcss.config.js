@@ -1,4 +1,5 @@
 module.exports = (config) => [
+    // require('postcss-extend')(),
     require("stylelint")(),
     require("postcss-cssnext")({
       browsers: "last 5 versions",

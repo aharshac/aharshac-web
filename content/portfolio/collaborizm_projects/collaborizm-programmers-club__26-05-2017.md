@@ -18,6 +18,9 @@ thumbnail: project_photos/rkkce3xpdvyo7ehekheh
 assoc_id: SyYhSuUS
 assoc_name: Areous Ahmadtj
 layout: Project
+skills:
+- Programming
+- Education
 ---
 # Story
 

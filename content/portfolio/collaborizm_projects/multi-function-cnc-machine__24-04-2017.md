@@ -16,6 +16,11 @@ thumbnail: project_photos/ujd6p0zhg73z914u1ltu
 assoc_id: ''
 assoc_name: ''
 layout: Project
+skills:
+- CNC
+- 3D Printing
+- Laser
+- Machining
 ---
 # Project Overview
 
@@ -87,7 +92,7 @@ My friends and I had built a prototype for our Bachelor of Engineering final yea
 Completed in March 2015, titled "Micro Laser Cutter". Done using the motion mechanisms of two CD drives.
 ![IMG-20151027-WA0035.jpg](czm://tfxhz34tthgyykddvuhf)
 ![IMG-20150429-WA0011.jpg](czm://as2pxdz9x3pltnmi8o12)
-@[youtube](​https://www.youtube.com/watch?v=QYWCjC6N8tc) 
+@[youtube](​https://www.youtube.com/watch?v=QYWCjC6N8tc)
 
 &nbsp;
 
@@ -124,7 +129,7 @@ From R-L: Karthik, Anish, Ananth and Harsha.
 
 **Laser Cutter Mode**
 ![IMG_9861-1200.jpg](czm://jdw8dqz0bw9ga7kldyuk)
-@[youtube](​https://www.youtube.com/watch?v=M7xnzpgKobM) 
+@[youtube](​https://www.youtube.com/watch?v=M7xnzpgKobM)
 &nbsp;
 
 **CNC Drill Mode**
@@ -173,6 +178,5 @@ We designed this product during the Third (junior) and Final (senior) years of o
 
 Now, we can focus on making a new product, thanks to Collaborizm.
 
-This project is dedicated to the Collaborizm founders, to our project guides and to the innovative spirit of the makers of the developing world. Our vision is to enable them with the right set of tools, at low prices. 
+This project is dedicated to the Collaborizm founders, to our project guides and to the innovative spirit of the makers of the developing world. Our vision is to enable them with the right set of tools, at low prices.
 &nbsp;
-

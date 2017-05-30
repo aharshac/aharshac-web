@@ -16,6 +16,11 @@ thumbnail: project_photos/gxte5inbup5pa1bwl6io
 assoc_id: ''
 assoc_name: ''
 layout: Project
+skills:
+- WordPress
+- PHP
+- Plugin
+- Collaborizm
 ---
 # Project Overview
 I want to mirror my contributions on Collaborizm to my WordPress-based personal website. Since I did not want to copy paste all threads, I made this plugin for WordPress.
@@ -53,6 +58,4 @@ I need content for my website!
 &nbsp;
 
 # Supporting Material & Info
-@[youtube](​https://youtu.be/0hivkBTcDL8) 
- 
-
+@[youtube](​https://youtu.be/0hivkBTcDL8)

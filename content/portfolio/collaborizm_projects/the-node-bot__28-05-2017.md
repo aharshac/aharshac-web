@@ -14,6 +14,13 @@ thumbnail: project_photos/spayhwidqfrqg1clkse6
 assoc_id: ''
 assoc_name: ''
 layout: Project
+skills:
+- Robotics
+- Node.js
+- FPV
+- Socket.io
+- Raspberry Pi
+github: https://github.com/aharshac/NodeBot
 ---
 # Project Overview
 
@@ -27,39 +34,39 @@ A robot with which you can learn about Raspberry Pi and JavaScript programming.
 
 ![Node_Bot.jpg](czm://ha62wzwqdjodu1gsu9j5)
 
-&nbsp; 
+&nbsp;
 
 # Teammates & Contributors I'm Looking For
 
 I've written the code. But I need beginners who can run and configure this robot step by step.
 
-&nbsp; 
+&nbsp;
 
 # Where I Need the Most Help
 
 I know programming and how to use Pi, but I'm really bad at communication.
 
-&nbsp; 
+&nbsp;
 
 # Why Sponsor This Project?
 
 The funds will be disbursed to the project's top contributors.
 
-&nbsp; 
+&nbsp;
 
 # What's in it for people who join?
 
 If you want to learn about Raspberry Pi, welcome aboard.
 But, if you know Pi well and would like to share your knowledge with the community, you're welcome too.
 
-&nbsp; 
+&nbsp;
 
 # Why I'm Passionate About This Project
 
-This is a "learn as you build" project, made for my friend [John Rodrigues](https://www.collaborizm.com/profile/4JqFRBfbW) . 
+This is a "learn as you build" project, made for my friend [John Rodrigues](https://www.collaborizm.com/profile/4JqFRBfbW) .
 This project is 100% compatible with his [Coffee Bot](https://www.collaborizm.com/project/B1skCk1ve) project.
 
-&nbsp; 
+&nbsp;
 
 # Supporting Material & Info
 
