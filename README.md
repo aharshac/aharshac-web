@@ -1,19 +1,7 @@
-# My static website
+# Personal Website
+[![Collaborizm](https://www.collaborizm.com/GitHubBadge.svg)](https://www.collaborizm.com/project/ryIBEU4zZ)
 
-## Install dependencies
+For instructions to build your own Collaborizm-powered website, join the project on Collaborizm.
 
-```sh
-npm install
-```
-
-## Run development server
-
-```sh
-npm start
-```
-
-## Build for production
-
-```sh
-npm run build
-```
+## Acknowledgement
+The Phenomic theme used in this project is inspired from the GitHub repo [kevin940726.github.io](https://github.com/kevin940726/kevin940726.github.io) by [Kai Hao](https://github.com/kevin940726)

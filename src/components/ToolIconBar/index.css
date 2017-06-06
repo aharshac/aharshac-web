@@ -32,13 +32,13 @@
     width: 1.2em;
   }
 
-  &:hover {
+  /*&:hover {
     transform: scale(1.2);
 
     @media (--mobile) {
       transform: none;
     }
-  }
+  }*/
 
 
 }

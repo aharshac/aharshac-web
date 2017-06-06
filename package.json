@@ -11,6 +11,7 @@
   "scripts": {
     "collaborizm": "babel-node -- ./collaborizm_importer/index.js",
     "babel": "babel --",
+    "babel-node": "babel-node --",
     "lint:js": "eslint --ignore-path .gitignore --fix .",
     "lint:css": "stylelint \"src/**/*.css\"",
     "lint": "npm-run-all --parallel lint:*",
