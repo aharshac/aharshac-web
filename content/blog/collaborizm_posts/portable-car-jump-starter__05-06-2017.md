@@ -24,7 +24,7 @@ This hack is for people living in colder climates where cars don't start due to 
 &nbsp;
 
 ## Things required
-* [3000-5000 mAh 3S 20-30C Lipo battery](https://hobbyking.com/en_us/turnigy-3000mah-3s-20c-lipo-pack.html)
+- [3000-5000 mAh 3S 20-30C Lipo battery](https://hobbyking.com/en_us/turnigy-3000mah-3s-20c-lipo-pack.html)
 - [Jumper cable with Schottky diodes](http://www.ebay.com/itm/Car-Jump-Starter-Clamps-Emergency-Lead-Cable-Battery-Alligator-Clips-/112263708457)
 - [EC5 female to XT60 male connector](http://www.ebay.com/itm/1pce-XT60-Male-to-EC5-female-No-Wire-adapter-for-LIPO-BATTERY-/222186509803?hash=item33bb5915eb:g:uZYAAOSw~y9ZCdGt) -- optional
 
@@ -36,6 +36,6 @@ This hack is for people living in colder climates where cars don't start due to 
 3. Start the car.
 4. Disconnect the lipo battery and the jumper.
 
-@[youtube](​https://www.youtube.com/watch?v=MLVvnsT07nk) 
- 
+@[youtube](​https://www.youtube.com/watch?v=MLVvnsT07nk)
+
 @[Robert Lancer](21339) @[Steven Reubenstone](1) @[Anton Voltchok](4kvzVlj5e) @[Steven Rocker](14280) @[Derek Drama](rJu_bPP7l)

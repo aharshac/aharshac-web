@@ -11,6 +11,7 @@ const uiClass = {
   youtube: 'md-yt',
   pre: 'md-pre',
   table: 'md-table',
+  blockquote: 'md-blockquote'
 };
 
 
@@ -99,6 +100,9 @@ const postYoutubeReplacer = (whole, ytId) =>
 const postTableRegex = /<table.*?/g;
 const postTableReplacer = `<table class="${uiClass.table}"`;
 
+const postBlockquoteRegex = /<blockquote.*?/g;
+const postBlockquoteReplacer = `<blockquote class="${uiClass.blockquote}"`;
+
 // Functions
 //
 /////////
@@ -135,7 +139,9 @@ const postProcessHtml = rawHtml =>
     .replace(postYoutubeRegex, postYoutubeReplacer)
     .replace(postSoundcloudReplacer, soundCloudEmbedReplacer)
 
-    .replace(postTableRegex, postTableReplacer);
+    .replace(postTableRegex, postTableReplacer)
+    .replace(postBlockquoteRegex, postBlockquoteReplacer);
+
     // .replace(postPreTagRegex, postPreTagReplacer);
 /////////
 
