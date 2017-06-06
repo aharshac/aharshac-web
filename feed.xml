@@ -1,0 +1,422 @@
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[aharshac-web]]></title><description><![CDATA[aharshac-web]]></description><link>https://alvaharsha.me/</link><generator>RSS for Node</generator><lastBuildDate>Tue, 06 Jun 2017 19:58:16 GMT</lastBuildDate><atom:link href="https://alvaharsha.me/feed.xml" rel="self" type="application/rss+xml"/><item><title><![CDATA[Portable car jump starter]]></title><description><![CDATA[<h2>Warning</h2>
+<blockquote class="md-blockquote">
+<ul>
+<li>There is a serious risk of explosion and/or injury.</li>
+<li>Do the electrical connections in the proper terminal order, i. e., connect positive to positive and negative to negative only.</li>
+<li>I’m not responsible for any accidents.</li>
+</ul>
+</blockquote>
+<p> </p>
+<p>This hack is for people living in colder climates where cars don’t start due to the cold. It could also be used when a car’s battery is depleted, irrespective of the climate.</p>
+<p> </p>
+<h2>Things required</h2>
+<ul>
+<li><a target=_blank href="https://hobbyking.com/en_us/turnigy-3000mah-3s-20c-lipo-pack.html">3000-5000 mAh 3S 20-30C Lipo battery</a></li>
+<li><a target=_blank href="http://www.ebay.com/itm/Car-Jump-Starter-Clamps-Emergency-Lead-Cable-Battery-Alligator-Clips-/112263708457">Jumper cable with Schottky diodes</a></li>
+<li><a target=_blank href="http://www.ebay.com/itm/1pce-XT60-Male-to-EC5-female-No-Wire-adapter-for-LIPO-BATTERY-/222186509803?hash=item33bb5915eb:g:uZYAAOSw~y9ZCdGt">EC5 female to XT60 male connector</a> – optional</li>
+</ul>
+<p> </p>
+<h2>Steps</h2>
+<ol>
+<li>You may want to replace the EC5 connectors on most jumper cables with an XT60 male connector. Or you could also cut off the EC5 connector on the jumper and replace it with an XT60 male. This is based on the assumption that your lipo battery comes with an XT60 female connector.</li>
+<li>Connect the jumper to the lipo battery and then connect the clamps of the jumper to the car’s lead battery.</li>
+<li>Start the car.</li>
+<li>Disconnect the lipo battery and the jumper.</li>
+</ol>
+<p><div class="md-yt">
+    <iframe allowFullScreen='allowFullScreen' type="text/html" width="100%" height="360"
+      src="https://www.youtube.com/embed/MLVvnsT07nk?autoplay=0&origin="
+      frameborder="0"></iframe>
+  </div></p>
+<p><span class='md-at-person'><a target=_blank href="https://www.collaborizm.com/profile/21339">Robert Lancer</a></span> <span class='md-at-person'><a target=_blank href="https://www.collaborizm.com/profile/1">Steven Reubenstone</a></span> <span class='md-at-person'><a target=_blank href="https://www.collaborizm.com/profile/4kvzVlj5e">Anton Voltchok</a></span> <span class='md-at-person'><a target=_blank href="https://www.collaborizm.com/profile/14280">Steven Rocker</a></span> <span class='md-at-person'><a target=_blank href="https://www.collaborizm.com/profile/rJu_bPP7l">Derek Drama</a></span></p>
+]]></description><link>https://alvaharsha.me/blog/portable-car-jump-starter/</link><guid isPermaLink="true">https://alvaharsha.me/blog/portable-car-jump-starter/</guid><pubDate>Sun, 04 Jun 2017 19:06:56 GMT</pubDate></item><item><title><![CDATA[Magic in the mechanical world.]]></title><description><![CDATA[<p>We all know magic is non-existent in the real world. But then there are gyroscopes and reaction wheels in the mechanical engineering world.</p>
+<p><a target=_blank href="https://en.wikipedia.org/wiki/Gyroscope">Gyroscope</a><br>
+<div class="md-yt">
+    <iframe allowFullScreen='allowFullScreen' type="text/html" width="100%" height="360"
+      src="https://www.youtube.com/embed/p9zhP9Bnx-k?autoplay=0&origin="
+      frameborder="0"></iframe>
+  </div></p>
+<p><a target=_blank href="https://en.wikipedia.org/wiki/Reaction_wheel">Reaction wheel</a><br>
+<div class="md-yt">
+    <iframe allowFullScreen='allowFullScreen' type="text/html" width="100%" height="360"
+      src="https://www.youtube.com/embed/woCdjbsjbPg?autoplay=0&origin="
+      frameborder="0"></iframe>
+  </div></p>
+]]></description><link>https://alvaharsha.me/blog/magic-in-the-mechanical-world/</link><guid isPermaLink="true">https://alvaharsha.me/blog/magic-in-the-mechanical-world/</guid><pubDate>Wed, 10 May 2017 18:37:57 GMT</pubDate></item><item><title><![CDATA[Add a Table of Contents to make your projects easier for beginners.]]></title><description><![CDATA[<p>It’s overwhelming for new project members to follow a project in the correct order. So I have made a <strong>Table of Contents</strong> for my <span class='md-at-project'><a target=_blank href="https://www.collaborizm.com/project/r1dE09adg">The Node Bot</a></span> project. All are welcome to join and be a part of it.</p>
+<p>Now, it’s easier to make a Markdown Table because of <a target=_blank href="https://react-md-table.firebaseapp.com/"><strong>React Markdown Table Generator</strong></a>.</p>
+<h2>Output</h2>
+<table class="md-table">
+<thead>
+<tr>
+<th><strong>Sl. No.</strong></th>
+<th><strong>Title</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td><a target=_blank href="https://www.collaborizm.com/thread/ryjMxzXtl?utm_content=menu_share&amp;utm_source=user_Hyt3y6XK">Bill of Materials</a></td>
+</tr>
+<tr>
+<td>2</td>
+<td><a target=_blank href="https://www.collaborizm.com/thread/Sk6NEPxqx?utm_content=menu_share&amp;utm_source=user_Hyt3y6XK">Raspberry Pi Initial Setup</a></td>
+</tr>
+<tr>
+<td>3</td>
+<td><a target=_blank href="https://www.collaborizm.com/thread/HJfJRDIag?utm_content=menu_share&amp;utm_source=user_Hyt3y6XK">Chassis Fabrication</a></td>
+</tr>
+<tr>
+<td>4</td>
+<td><a target=_blank href="https://www.collaborizm.com/thread/HySSiOQKg?utm_content=menu_share&amp;utm_source=user_Hyt3y6XK">Electronics Setup</a></td>
+</tr>
+<tr>
+<td>5</td>
+<td><a target=_blank href="https://www.collaborizm.com/thread/Hy62bvy9g?utm_content=post_link&amp;utm_source=user_Hyt3y6XK">Raspberry Pi GPIO Connections</a></td>
+</tr>
+<tr>
+<td>6</td>
+<td><a target=_blank href="https://www.collaborizm.com/thread/Hkb_Y6Ete?utm_content=post_link&amp;utm_source=user_Hyt3y6XK">Debugging motor directions</a></td>
+</tr>
+<tr>
+<td>7</td>
+<td><a target=_blank href="https://www.collaborizm.com/thread/HJb44cMCg?utm_content=post_link&amp;utm_source=user_Hyt3y6XK">Steering Mechanism</a></td>
+</tr>
+<tr>
+<td>8</td>
+<td><a target=_blank href="https://www.collaborizm.com/thread/BykkHaKix?utm_content=post_link&amp;utm_source=user_Hyt3y6XK">Install Node.js 7.x on Raspberry Pi 2 or 3</a></td>
+</tr>
+<tr>
+<td>9</td>
+<td><a target=_blank href="https://www.collaborizm.com/thread/SyFenrp6l?utm_content=post_link&amp;utm_source=user_Hyt3y6XK">Install mjpg-streamer on Raspberry Pi for video streaming!</a></td>
+</tr>
+<tr>
+<td>10</td>
+<td>TODO: Download Node Bot source from GitHub</td>
+</tr>
+<tr>
+<td>11</td>
+<td>TODO: Start the Node Bot for remote control and video streaming.</td>
+</tr>
+<tr>
+<td>12</td>
+<td><a target=_blank href="https://www.collaborizm.com/thread/ryFdw2uYg?utm_content=menu_share&amp;utm_source=user_Hyt3y6XK">The Remote Control Panel</a></td>
+</tr>
+</tbody>
+</table>
+<h2>Code</h2>
+<pre class="language-clike"><code class="language-clike"><span class="token operator">|</span> <span class="token operator">*</span><span class="token operator">*</span>Sl<span class="token punctuation">.</span> No<span class="token punctuation">.</span><span class="token operator">*</span><span class="token operator">*</span> <span class="token operator">|</span> <span class="token operator">*</span><span class="token operator">*</span>Title<span class="token operator">*</span><span class="token operator">*</span>                                                                                                                                                 <span class="token operator">|</span>
+<span class="token operator">|</span> <span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">-</span> <span class="token operator">|</span> <span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">-</span> <span class="token operator">|</span>
+<span class="token operator">|</span> <span class="token number">1</span>           <span class="token operator">|</span> <span class="token punctuation">[</span>Bill of Materials<span class="token punctuation">]</span><span class="token punctuation">(</span>https<span class="token punctuation">:</span><span class="token operator">/</span><span class="token operator">/</span>www<span class="token punctuation">.</span>collaborizm<span class="token punctuation">.</span>com<span class="token operator">/</span>thread<span class="token operator">/</span>ryjMxzXtl<span class="token operator">?</span>utm_content<span class="token operator">=</span>menu_share<span class="token operator">&amp;</span>utm_source<span class="token operator">=</span>user_Hyt3y6XK<span class="token punctuation">)</span>                                         <span class="token operator">|</span>
+<span class="token operator">|</span> <span class="token number">2</span>           <span class="token operator">|</span> <span class="token punctuation">[</span>Raspberry Pi Initial Setup<span class="token punctuation">]</span><span class="token punctuation">(</span>https<span class="token punctuation">:</span><span class="token operator">/</span><span class="token operator">/</span>www<span class="token punctuation">.</span>collaborizm<span class="token punctuation">.</span>com<span class="token operator">/</span>thread<span class="token operator">/</span>Sk6NEPxqx<span class="token operator">?</span>utm_content<span class="token operator">=</span>menu_share<span class="token operator">&amp;</span>utm_source<span class="token operator">=</span>user_Hyt3y6XK<span class="token punctuation">)</span>                                <span class="token operator">|</span>
+<span class="token operator">|</span> <span class="token number">3</span>           <span class="token operator">|</span> <span class="token punctuation">[</span>Chassis Fabrication<span class="token punctuation">]</span><span class="token punctuation">(</span>https<span class="token punctuation">:</span><span class="token operator">/</span><span class="token operator">/</span>www<span class="token punctuation">.</span>collaborizm<span class="token punctuation">.</span>com<span class="token operator">/</span>thread<span class="token operator">/</span>HJfJRDIag<span class="token operator">?</span>utm_content<span class="token operator">=</span>menu_share<span class="token operator">&amp;</span>utm_source<span class="token operator">=</span>user_Hyt3y6XK<span class="token punctuation">)</span>                                       <span class="token operator">|</span>
+<span class="token operator">|</span> <span class="token number">4</span>           <span class="token operator">|</span> <span class="token punctuation">[</span>Electronics Setup<span class="token punctuation">]</span><span class="token punctuation">(</span>https<span class="token punctuation">:</span><span class="token operator">/</span><span class="token operator">/</span>www<span class="token punctuation">.</span>collaborizm<span class="token punctuation">.</span>com<span class="token operator">/</span>thread<span class="token operator">/</span>HySSiOQKg<span class="token operator">?</span>utm_content<span class="token operator">=</span>menu_share<span class="token operator">&amp;</span>utm_source<span class="token operator">=</span>user_Hyt3y6XK<span class="token punctuation">)</span>                                         <span class="token operator">|</span>
+<span class="token operator">|</span> <span class="token number">5</span>           <span class="token operator">|</span> <span class="token punctuation">[</span>Raspberry Pi GPIO Connections<span class="token punctuation">]</span><span class="token punctuation">(</span>https<span class="token punctuation">:</span><span class="token operator">/</span><span class="token operator">/</span>www<span class="token punctuation">.</span>collaborizm<span class="token punctuation">.</span>com<span class="token operator">/</span>thread<span class="token operator">/</span>Hy62bvy9g<span class="token operator">?</span>utm_content<span class="token operator">=</span>post_link<span class="token operator">&amp;</span>utm_source<span class="token operator">=</span>user_Hyt3y6XK<span class="token punctuation">)</span>                              <span class="token operator">|</span>
+<span class="token operator">|</span> <span class="token number">6</span>           <span class="token operator">|</span> <span class="token punctuation">[</span>Debugging motor directions<span class="token punctuation">]</span><span class="token punctuation">(</span>https<span class="token punctuation">:</span><span class="token operator">/</span><span class="token operator">/</span>www<span class="token punctuation">.</span>collaborizm<span class="token punctuation">.</span>com<span class="token operator">/</span>thread<span class="token operator">/</span>Hkb_Y6Ete<span class="token operator">?</span>utm_content<span class="token operator">=</span>post_link<span class="token operator">&amp;</span>utm_source<span class="token operator">=</span>user_Hyt3y6XK<span class="token punctuation">)</span>                                 <span class="token operator">|</span>
+<span class="token operator">|</span> <span class="token number">7</span>           <span class="token operator">|</span> <span class="token punctuation">[</span>Steering Mechanism<span class="token punctuation">]</span><span class="token punctuation">(</span>https<span class="token punctuation">:</span><span class="token operator">/</span><span class="token operator">/</span>www<span class="token punctuation">.</span>collaborizm<span class="token punctuation">.</span>com<span class="token operator">/</span>thread<span class="token operator">/</span>HJb44cMCg<span class="token operator">?</span>utm_content<span class="token operator">=</span>post_link<span class="token operator">&amp;</span>utm_source<span class="token operator">=</span>user_Hyt3y6XK<span class="token punctuation">)</span>                                         <span class="token operator">|</span>
+<span class="token operator">|</span> <span class="token number">8</span>           <span class="token operator">|</span> <span class="token punctuation">[</span>Install Node<span class="token punctuation">.</span>js <span class="token number">7</span><span class="token punctuation">.</span>x on Raspberry Pi <span class="token number">2</span> or <span class="token number">3</span><span class="token punctuation">]</span><span class="token punctuation">(</span>https<span class="token punctuation">:</span><span class="token operator">/</span><span class="token operator">/</span>www<span class="token punctuation">.</span>collaborizm<span class="token punctuation">.</span>com<span class="token operator">/</span>thread<span class="token operator">/</span>BykkHaKix<span class="token operator">?</span>utm_content<span class="token operator">=</span>post_link<span class="token operator">&amp;</span>utm_source<span class="token operator">=</span>user_Hyt3y6XK<span class="token punctuation">)</span>                 <span class="token operator">|</span>
+<span class="token operator">|</span> <span class="token number">9</span>           <span class="token operator">|</span> <span class="token punctuation">[</span>Install mjpg<span class="token operator">-</span>streamer on Raspberry Pi <span class="token keyword">for</span> video streaming<span class="token operator">!</span><span class="token punctuation">]</span><span class="token punctuation">(</span>https<span class="token punctuation">:</span><span class="token operator">/</span><span class="token operator">/</span>www<span class="token punctuation">.</span>collaborizm<span class="token punctuation">.</span>com<span class="token operator">/</span>thread<span class="token operator">/</span>SyFenrp6l<span class="token operator">?</span>utm_content<span class="token operator">=</span>post_link<span class="token operator">&amp;</span>utm_source<span class="token operator">=</span>user_Hyt3y6XK<span class="token punctuation">)</span> <span class="token operator">|</span>
+<span class="token operator">|</span> <span class="token number">10</span>          <span class="token operator">|</span> TODO<span class="token punctuation">:</span> Download Node Bot source from GitHub                                                                                                                <span class="token operator">|</span>
+<span class="token operator">|</span> <span class="token number">11</span>          <span class="token operator">|</span> TODO<span class="token punctuation">:</span> Start the Node Bot <span class="token keyword">for</span> remote control and video streaming<span class="token punctuation">.</span>                                                                                          <span class="token operator">|</span>
+<span class="token operator">|</span> <span class="token number">12</span>          <span class="token operator">|</span> <span class="token punctuation">[</span>The Remote Control Panel<span class="token punctuation">]</span><span class="token punctuation">(</span>https<span class="token punctuation">:</span><span class="token operator">/</span><span class="token operator">/</span>www<span class="token punctuation">.</span>collaborizm<span class="token punctuation">.</span>com<span class="token operator">/</span>thread<span class="token operator">/</span>ryFdw2uYg<span class="token operator">?</span>utm_content<span class="token operator">=</span>menu_share<span class="token operator">&amp;</span>utm_source<span class="token operator">=</span>user_Hyt3y6XK<span class="token punctuation">)</span>                                  <span class="token operator">|</span>
+</code></pre>
+]]></description><link>https://alvaharsha.me/blog/add-a-table-of-contents-to-make-your-projects-easier-for-beginners/</link><guid isPermaLink="true">https://alvaharsha.me/blog/add-a-table-of-contents-to-make-your-projects-easier-for-beginners/</guid><pubDate>Tue, 02 May 2017 19:25:27 GMT</pubDate></item><item><title><![CDATA[React Markdown Table Generator]]></title><description><![CDATA[<p>Check out my latest work <a target=_blank href="https://github.com/aharshac/react-md-table">React Markdown Table Generator</a>.</p>
+<p>You can use this React.js app to generate tables like the one shown below.</p>
+<p>I’ll host it on the web soon.</p>
+<p> </p>
+<h2>Edit [2 May 2017]: Added to Firebase</h2>
+<p>You can find the app at <a target=_blank href="https://react-md-table.firebaseapp.com">https://react-md-table.firebaseapp.com</a></p>
+<p>Thanks <span class='md-at-person'><a target=_blank href="https://www.collaborizm.com/profile/21339">Robert Lancer</a></span> for telling me to upload to Firebase and also for helping me to fix the wrong path bug.</p>
+<p><strong>Note</strong>: Keep the <code>homepage</code> element empty in <code>package.json</code>. Otherwise, the build process will generate incorrect <code>%PUBLIC_URL%</code> path.</p>
+<p> </p>
+<h2>Screenshot</h2>
+<p><div>
+    <img class="md-img" src='https://res.cloudinary.com/collabizm/image/upload//v1/from_markdown/nvvl2lpumorlb7n0qyhc' />
+  </div></p>
+<h2>Output</h2>
+<table class="md-table">
+<thead>
+<tr>
+<th><strong>Name</strong></th>
+<th><strong>Seller</strong></th>
+<th><strong>Cost (₹)</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>16 GB MicroSD card</td>
+<td><a target=_blank href="http://www.amazon.in/Samsung-class-Memory-Without-Adapter/dp/B007HJPBME">Amazon</a></td>
+<td>400</td>
+</tr>
+<tr>
+<td>Raspberry Pi 3</td>
+<td><a target=_blank href="https://www.collaborizm.com/profile/SJne7FcMg?utm_content=user_link&amp;utm_source=user_Hyt3y6XK">@Claran Martis</a></td>
+<td>3000</td>
+</tr>
+<tr>
+<td></td>
+<td><strong>Total</strong></td>
+<td><strong>3400</strong></td>
+</tr>
+</tbody>
+</table>
+<h2>Code</h2>
+<pre class="language-clike"><code class="language-clike"><span class="token operator">|</span> <span class="token operator">*</span><span class="token operator">*</span>Name<span class="token operator">*</span><span class="token operator">*</span>           <span class="token operator">|</span> <span class="token operator">*</span><span class="token operator">*</span>Seller<span class="token operator">*</span><span class="token operator">*</span>                                                                                                     <span class="token operator">|</span> <span class="token operator">*</span><span class="token operator">*</span>Cost <span class="token punctuation">(</span>₹<span class="token punctuation">)</span><span class="token operator">*</span><span class="token operator">*</span> <span class="token operator">|</span>
+<span class="token operator">|</span> <span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span> <span class="token operator">|</span> <span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span> <span class="token operator">|</span> <span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span> <span class="token operator">|</span>
+<span class="token operator">|</span> <span class="token number">16</span> GB MicroSD card <span class="token operator">|</span> <span class="token punctuation">[</span>Amazon<span class="token punctuation">]</span><span class="token punctuation">(</span>http<span class="token punctuation">:</span><span class="token operator">/</span><span class="token operator">/</span>www<span class="token punctuation">.</span>amazon<span class="token punctuation">.</span><span class="token keyword">in</span><span class="token operator">/</span>Samsung<span class="token operator">-</span>class<span class="token operator">-</span>Memory<span class="token operator">-</span>Without<span class="token operator">-</span>Adapter<span class="token operator">/</span>dp<span class="token operator">/</span>B007HJPBME<span class="token punctuation">)</span>                              <span class="token operator">|</span> <span class="token number">400</span>          <span class="token operator">|</span>
+<span class="token operator">|</span> Raspberry Pi <span class="token number">3</span>     <span class="token operator">|</span> <span class="token punctuation">[</span>@Claran Martis<span class="token punctuation">]</span><span class="token punctuation">(</span>https<span class="token punctuation">:</span><span class="token operator">/</span><span class="token operator">/</span>www<span class="token punctuation">.</span>collaborizm<span class="token punctuation">.</span>com<span class="token operator">/</span>profile<span class="token operator">/</span>SJne7FcMg<span class="token operator">?</span>utm_content<span class="token operator">=</span>user_link<span class="token operator">&amp;</span>utm_source<span class="token operator">=</span>user_Hyt3y6XK<span class="token punctuation">)</span> <span class="token operator">|</span> <span class="token number">3000</span>         <span class="token operator">|</span>
+<span class="token operator">|</span>                    <span class="token operator">|</span> <span class="token operator">*</span><span class="token operator">*</span>Total<span class="token operator">*</span><span class="token operator">*</span>                                                                                                      <span class="token operator">|</span> <span class="token operator">*</span><span class="token operator">*</span><span class="token number">3400</span><span class="token operator">*</span><span class="token operator">*</span>     <span class="token operator">|</span>
+</code></pre>
+<p><span class='md-at-person'><a target=_blank href="https://www.collaborizm.com/profile/21339">Robert Lancer</a></span> <span class='md-at-person'><a target=_blank href="https://www.collaborizm.com/profile/4kvzVlj5e">Anton Voltchok</a></span> <span class='md-at-person'><a target=_blank href="https://www.collaborizm.com/profile/HkCdhb6Gl">Ranjan Dailata</a></span></p>
+]]></description><link>https://alvaharsha.me/blog/react-markdown-table-generator/</link><guid isPermaLink="true">https://alvaharsha.me/blog/react-markdown-table-generator/</guid><pubDate>Mon, 01 May 2017 20:36:47 GMT</pubDate></item><item><title><![CDATA[Tips & Truths of the Freelancing Lifestyle]]></title><description><![CDATA[<p><div>
+    <img class="md-img" src='https://res.cloudinary.com/collabizm/image/upload//v1/from_markdown/j1jrqscfoquvfhqjmku8' />
+  </div></p>
+<ul>
+<li>
+<p><strong>Leverage your network</strong> → most likely the people you already know will be your first “customers” or will refer you to your first customers…so use your friends…tell them what you are working on and what you want to use your skills to freelance for. This is the heart of Word of Mouth Marketing (WOMM) and can result in a TON of business. Don’t under estimate your existing contacts. Of course, don’t forget about building your Rolodex as well.</p>
+</li>
+<li>
+<p><strong>Build your Network</strong> → You may find it counter-intuitive to network with your “competition” or other freelancers in the same field, but this is <em>essential</em> to learning more about how you can succeed in your market. For instance, someone who has been freelancing successfully in your specific field can tell you critical things about where to advertise your skills, where to find potential customers, and perhaps what additional skills you should be learning in order to be a successful freelancer.</p>
+</li>
+</ul>
+<p><div>
+    <img class="md-img" src='https://res.cloudinary.com/collabizm/image/upload//v1/from_markdown/obhnxxyqbsqliyl9rczy' />
+  </div></p>
+<ul>
+<li>
+<p><strong>Your Fee</strong> → the point above directly ties in to you being able to determine the price of your services. By staying connected to fellow freelancers, you will be able to ask/find out what the market is like for your skills and what the going rates are.</p>
+</li>
+<li>
+<p><strong>Set your schedule</strong> → the great part about being a freelancer is that you choose exactly what you want to work on and when you want to work on it. The downside of that is you may say Yes to too many projects…without a boss overseeing your workload, you may take on too much…so be aware of how much time you actually have to devote to each project.</p>
+</li>
+<li>
+<p><strong>Be prepared for down time</strong> → Freelancing can be frustrating. You will only work when someone needs your skill set. So be aware that although your skillset may be incredibly useful, that does not mean you will get work every single day. That means your income will ebb and flow. Remember though, you are one of the few lucky people to actually have down time (remember, most people work in an office ALL DAY) so use this time to do what you want…reward yourself so you can recharge and get back to work when it flows in.</p>
+</li>
+</ul>
+<p><span class='md-hashtag-adhoc'>#CAREER</span></p>
+]]></description><link>https://alvaharsha.me/blog/tips-truths-of-the-freelancing-lifestyle/</link><guid isPermaLink="true">https://alvaharsha.me/blog/tips-truths-of-the-freelancing-lifestyle/</guid><pubDate>Fri, 28 Apr 2017 15:44:18 GMT</pubDate></item><item><title><![CDATA[Free or paid video editing software]]></title><description><![CDATA[<p>I need a video editing software to edit a few videos. What are my options?</p>
+<p>I currently use Adobe Premiere Pro CC 2014 and Windows Movie Maker 2012.</p>
+<p><span class='md-at-person'><a target=_blank href="https://www.collaborizm.com/profile/21339">Robert Lancer</a></span> <span class='md-at-person'><a target=_blank href="https://www.collaborizm.com/profile/HkCdhb6Gl">Ranjan Dailata</a></span> <span class='md-at-person'><a target=_blank href="https://www.collaborizm.com/profile/rkW1U1pee">Sai Prasad</a></span> <span class='md-at-person'><a target=_blank href="https://www.collaborizm.com/profile/4JqFRBfbW">John Rodrigues</a></span></p>
+]]></description><link>https://alvaharsha.me/blog/free-or-paid-video-editing-software/</link><guid isPermaLink="true">https://alvaharsha.me/blog/free-or-paid-video-editing-software/</guid><pubDate>Wed, 26 Apr 2017 15:31:07 GMT</pubDate></item><item><title><![CDATA[Adding bugs to collaborizm.]]></title><description><![CDATA[<p>I wanted <span class='md-at-person'><a target=_blank href="https://www.collaborizm.com/profile/21339">Robert</a></span> and <span class='md-at-person'><a target=_blank href="https://www.collaborizm.com/profile/4kvzVlj5e">Anton</a></span> to distinguish <strong>inline code</strong> from regular text and I gave them the CSS too.</p>
+<p>While the CSS gave me what I wanted, it started overriding the syntax highlighting in <strong>block code</strong>.</p>
+<p><div>
+    <img class="md-img" src='https://res.cloudinary.com/collabizm/image/upload//v1/from_markdown/pkoibmn2ff1hrffgzsvt' />
+  </div></p>
+<h2>Faulty CSS</h2>
+<pre class="language-clike"><code class="language-clike">code <span class="token punctuation">{</span>
+    background<span class="token operator">-</span>color<span class="token punctuation">:</span> #f7f7f9<span class="token punctuation">;</span>
+    border<span class="token punctuation">:</span> 1px solid #e1e1e8<span class="token punctuation">;</span>
+    border<span class="token operator">-</span>radius<span class="token punctuation">:</span> 3px<span class="token punctuation">;</span>
+    color<span class="token punctuation">:</span> #dd1144<span class="token punctuation">;</span>
+    padding<span class="token punctuation">:</span> 2px 4px<span class="token punctuation">;</span>
+    overflow<span class="token operator">-</span>wrap<span class="token punctuation">:</span> <span class="token keyword">break</span><span class="token operator">-</span>word<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<h2>Fix</h2>
+<pre class="language-clike"><code class="language-clike"><span class="token operator">*</span><span class="token punctuation">:</span><span class="token function">not</span><span class="token punctuation">(</span>pre<span class="token punctuation">)</span> <span class="token operator">></span> code <span class="token punctuation">{</span>
+    background<span class="token operator">-</span>color<span class="token punctuation">:</span> #f7f7f9<span class="token punctuation">;</span>
+    border<span class="token punctuation">:</span> 1px solid #e1e1e8<span class="token punctuation">;</span>
+    border<span class="token operator">-</span>radius<span class="token punctuation">:</span> 3px<span class="token punctuation">;</span>
+    color<span class="token punctuation">:</span> #dd1144<span class="token punctuation">;</span>
+    padding<span class="token punctuation">:</span> 2px 4px<span class="token punctuation">;</span>
+    overflow<span class="token operator">-</span>wrap<span class="token punctuation">:</span> <span class="token keyword">break</span><span class="token operator">-</span>word<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>PS: Are there prizes for fails? 😛</p>
+<p><span class='md-hashtag-adhoc'>#Fail</span> <span class='md-hashtag-adhoc'>#fails</span></p>
+]]></description><link>https://alvaharsha.me/blog/adding-bugs-to-collaborizm/</link><guid isPermaLink="true">https://alvaharsha.me/blog/adding-bugs-to-collaborizm/</guid><pubDate>Mon, 24 Apr 2017 21:10:17 GMT</pubDate></item><item><title><![CDATA[Repairing a broken mouse.]]></title><description><![CDATA[<p>A few months ago, the right mouse button of my  <a target=_blank href="http://www.amazon.in/Logitech-G300s-Optical-Gaming-910-004347/dp/B00RH6R7C4"><strong>Logitech G300s</strong></a> gaming mouse stopped functioning. As I was busy with other stuff at that time, I kept it aside</p>
+<p>Today, as I had nothing to do, I opened it up and repaired it. It was very easy and saved me a lot of money. The problem due to dirt accumulation on the contact area in the microswitch.</p>
+<p>Mouse buttons use micro switches, mostly <a target=_blank href="http://www.amazon.in/OMRON-D2FC-F-7N-Switch-Microswitch-Logitech/dp/B00HPL57JQ/ref=pd_lpo_sbs_147_t_0"><strong>Omron D2FC-F-7N</strong></a>.</p>
+<p><div>
+    <img class="md-img" src='https://res.cloudinary.com/collabizm/image/upload//v1/from_markdown/ndwvzzwohyedw4d0bg5w' />
+  </div></p>
+<p> </p>
+<h2>Things required</h2>
+<ol>
+<li>Screwdriver set.</li>
+<li>Soldering iron.</li>
+<li>Soldering flux (paste).</li>
+<li>Solder wire.</li>
+<li>Desoldering wick.</li>
+<li>Solder.</li>
+<li>PCB vice (helping hands) - optional.</li>
+</ol>
+<p> </p>
+<h2>Steps</h2>
+<ol>
+<li>Open up the mouse after removing the screws with the correct screwdriver. Also, unscrew the PCB from the enclosure. If the USB cable is wired to the board via a connector pair, unconnect them.</li>
+</ol>
+<p><div>
+    <img class="md-img" src='https://res.cloudinary.com/collabizm/image/upload//v1/from_markdown/v2lzhd9naymxwatrc9gi' />
+  </div></p>
+<ol start="2">
+<li>Prepare the mouse for desoldering the spoilt micro switch.</li>
+</ol>
+<p><div>
+    <img class="md-img" src='https://res.cloudinary.com/collabizm/image/upload//v1/from_markdown/n4vusycerdpsznn3bmvj' />
+  </div></p>
+<ol start="3">
+<li>
+<p>Start the iron and wait for it to heat up.</p>
+</li>
+<li>
+<p>Apply a bit of flux on the desoldering wick and push it into the PCB so that the leads (pins) of the faulty switch come through the gaps in the wick.</p>
+</li>
+<li>
+<p>Heat the pins of the switch till the solder on them is completely absorbed by the desoldering wick.<br>
+Then remove the switch from the board.</p>
+</li>
+<li>
+<p>Open the micro switch and clean the contact surfaces.<br>
+<div class="md-yt">
+    <iframe allowFullScreen='allowFullScreen' type="text/html" width="100%" height="360"
+      src="https://www.youtube.com/embed/D3fepD-Ffws?autoplay=0&origin="
+      frameborder="0"></iframe>
+  </div></p>
+</li>
+<li>
+<p>Close the micro switch.</p>
+</li>
+<li>
+<p>Resolder the switch to the PCB.</p>
+</li>
+<li>
+<p>If removed, connect the USB cable back to the PCB and put the PCB and other mouse parts in their proper places inside the mouse enclosure.</p>
+</li>
+<li>
+<p>Screw the PCB back onto the enclosure.</p>
+</li>
+<li>
+<p>Test if the buttons work.</p>
+</li>
+</ol>
+<p> </p>
+<p>I use this mouse both for gaming and programming as it comes with multiple profiles.<br>
+For gaming, I map a few mouse keys to the additional keys, for example, reloading, nading, crouching, etc.<br>
+As this mouse also comes with a macro function, I have configured a few to duplicate lines, copy and paste, etc and mapped to the extra keys for help during programming.</p>
+<p>Find me on EA Origin, Battlelog, Battlefield 3 and Battlefield 4 on PC. My profile name is <strong>KA9tIN</strong> and I usually play along with my friend <span class='md-at-person'><a target=_blank href="https://www.collaborizm.com/profile/rymV3A9Ye">Ananth Shetty</a></span> <strong>(Hawkeye1662)</strong></p>
+]]></description><link>https://alvaharsha.me/blog/repairing-a-broken-mouse/</link><guid isPermaLink="true">https://alvaharsha.me/blog/repairing-a-broken-mouse/</guid><pubDate>Sun, 23 Apr 2017 19:27:43 GMT</pubDate></item><item><title><![CDATA["Connect and forget" bare-bones arduino with captive rechargeable battery.]]></title><description><![CDATA[<p><span class='md-at-person'><a target=_blank href="https://www.collaborizm.com/profile/V1CArKtkW">Abhi</a></span> <span class='md-at-person'><a target=_blank href="https://www.collaborizm.com/profile/Hk970yNsx">Ravi</a></span></p>
+<p>Need an Arduino with the least additions and the smallest size possible. It should also have a captive rechargeable battery.</p>
+<p>How do I take a stab at this?</p>
+]]></description><link>https://alvaharsha.me/blog/connect-and-forget-bare-bones-arduino-with-captive-rechargeable-battery/</link><guid isPermaLink="true">https://alvaharsha.me/blog/connect-and-forget-bare-bones-arduino-with-captive-rechargeable-battery/</guid><pubDate>Thu, 20 Apr 2017 20:25:12 GMT</pubDate></item><item><title><![CDATA[My first NPM package :)]]></title><description><![CDATA[<p>I’ve made a React component to render dates and times in relation to the current time, like “x seconds/minutes/hours/days/years ago”.</p>
+<p><a target=_blank href="https://nodei.co/npm/react-relative-time/"><img src="https://nodei.co/npm/react-relative-time.png?compact=true" alt="NPM"></a></p>
+<p>This component does not depend on the ubiquitous <a target=_blank href="https://momentjs.com/"><strong>moment.js</strong></a>, which is close to 64 KB with locales. So I could limit the size to 5 KB by transpiling and minifying with <strong>Babel</strong> and  <strong>Babili</strong> respectively.</p>
+<p>Thanks to <span class='md-at-person'><a target=_blank href="https://www.collaborizm.com/profile/21339">Robert Lancer</a></span> for asking me to make this package and push it to the <strong>npm</strong> registry. 😃</p>
+]]></description><link>https://alvaharsha.me/blog/my-first-npm-package-/</link><guid isPermaLink="true">https://alvaharsha.me/blog/my-first-npm-package-/</guid><pubDate>Thu, 20 Apr 2017 20:06:48 GMT</pubDate></item><item><title><![CDATA[Big time fail.]]></title><description><![CDATA[<p>tl;dr Lack of precise, coherent and unambiguous communication. <span class='md-hashtag-adhoc'>#fail</span></p>
+<p>While explaining stuff, I do it at my level, I can neither explain stuff to a beginner, nor to someone who knows better than me, however hard I try.</p>
+<p>Past victims include <span class='md-at-person'><a target=_blank href="https://www.collaborizm.com/profile/4JqFRBfbW">John Rodrigues</a></span> and <span class='md-at-person'><a target=_blank href="https://www.collaborizm.com/profile/1">Steven Reubenstone</a></span></p>
+<p>With <span class='md-at-person'><a target=_blank href="https://www.collaborizm.com/profile/1">Steven</a></span>, one thing led to another, and finally, he ended up with <a target=_blank href="https://www.collaborizm.com/thread/SysEvVppe?utm_content=menu_share&amp;utm_source=user_Hyt3y6XK">https://www.collaborizm.com/thread/SysEvVppe?utm_content=menu_share&amp;utm_source=user_Hyt3y6XK</a></p>
+<p>PS: I’m a good student, but I feel I can never be a good teacher. lol</p>
+<p><div>
+    <img class="md-img" src='https://res.cloudinary.com/collabizm/image/upload//v1/from_markdown/bwrosqwjhwe2o7d08sq2' />
+  </div></p>
+]]></description><link>https://alvaharsha.me/blog/big-time-fail/</link><guid isPermaLink="true">https://alvaharsha.me/blog/big-time-fail/</guid><pubDate>Mon, 17 Apr 2017 19:26:05 GMT</pubDate></item><item><title><![CDATA[Buying from China without paying Customs Duty/Tax.]]></title><description><![CDATA[<p>The <strong><a target=_blank href="https://en.wikipedia.org/wiki/Boston_Tea_Party">Boston Tea Party</a></strong> and Gandhi’s <strong>Salt March</strong> (<a target=_blank href="http://www.history.com/news/gandhis-salt-march-85-years-ago">1</a>, <a target=_blank href="http://www.dandimemorial.in/">2</a>) have taught us not to pay overpriced and sometimes unjustified taxes and duties. This is a small guide for buying stuff from the <strong>People’s Republic of China (PRC)</strong>, not the <strong>Republic of China (Taiwan)</strong>.</p>
+<p>Don’t buy locally from importers who don’t provide legal invoices. They are actually buying stuff in small quantities from the above-mentioned sites without paying duties, yet charge you exorbitant profit margins. They’re cheating you as well as your country’s government. Also, they will not cover warranties.</p>
+<p> </p>
+<h2>Context</h2>
+<ul>
+<li>This guide is valid across the <strong>Indian subcontinent (South Asia), i.e., India, Pakistan, Bangladesh, Nepal, and Bhutan</strong>.</li>
+<li>Not valid for countries like <strong>Brazil, Russia, etc.</strong> where the <strong>Customs</strong> departments are more efficient.</li>
+<li>Please comment with your experiences with your country’s <strong>Customs</strong> and correct me if I’m wrong.</li>
+</ul>
+<p> </p>
+<h2>Before buying</h2>
+<ul>
+<li>Use only reputed e-commerce sites like <strong>AliExpress, Banggood, DealExtreme, etc</strong></li>
+<li>Use mobile apps for more discounts.</li>
+<li>Search for stuff and order by numbers sold.<br>
+Buy from sellers who have sold highest number of orders, taking cost into account.</li>
+<li>Chinese sellers are not very technically inclined, so don’t expect them to answer all your technical doubts/queries.</li>
+</ul>
+<p> </p>
+<h2>While buying</h2>
+<ul>
+<li>If possible, use only <strong>(China) Govt. post registered air mail/parcel</strong>.<br>
+This might take 30-45 days for delivery, but it’s less likely to be held and charged by <strong>Customs</strong> than premium shippers like DHL or FedEx that typically deliver within a week.</li>
+<li>Tell the seller to declare stuff as <strong>sample</strong> or <strong>replacement</strong> part in the invoice, and declare only 10% of the price. See that amount declared is proportional to the size/volume of the shipment.</li>
+<li>Break down large quantities into smaller packages.</li>
+<li>Order only to residential addresses.</li>
+<li>Order not only to your house but also to your neighbours’ as well as your friends’ houses.</li>
+<li>As a rule of thumb, don’t buy stuff that costs above $80-100. If it’s flagged by <strong>Customs</strong>, you’ll end up paying more than 1.5x of the price of the locally available alternative.</li>
+</ul>
+<p> </p>
+<h2>After buying</h2>
+<ul>
+<li>Do not confirm delivery. Allow protection period to run out.</li>
+<li>Check the stuff for defects as soon as they arrive.</li>
+<li>Before filing disputes, contact the seller once to see if they are reasonable. Most of them will tell you to file disputes. If they don’t, file disputes anyways.</li>
+<li>Be polite to sellers. They like to be addressed as <em>friend</em> or <em>brother/sister</em>. Keep wishing them on Chinese festivals. If they like you, they’ll give you coupons and will also tell you about upcoming offers or new products.</li>
+</ul>
+<p> </p>
+<h2>Buy locally</h2>
+<ul>
+<li>When you don’t want to wait a month or more.</li>
+<li>You have money to spend.</li>
+<li>If you don’t mind buying from legal importers after shelling more money.</li>
+<li>If you don’t think that corrupt politicians are milking your country more than you are.</li>
+<li>If you are worried about your country’s trade deficit with China.</li>
+<li>Want to make your country great again. 😛</li>
+</ul>
+]]></description><link>https://alvaharsha.me/blog/buying-from-china-without-paying-customs-dutytax/</link><guid isPermaLink="true">https://alvaharsha.me/blog/buying-from-china-without-paying-customs-dutytax/</guid><pubDate>Fri, 14 Apr 2017 17:45:21 GMT</pubDate></item><item><title><![CDATA[User of the Week: Harsha Alva]]></title><description><![CDATA[<p>This Week’s User of the Week: @harsha.alva Harsha Alva. This 22 Year Old <span class='md-hashtag-adhoc'>#Engineer</span> has dominated the Collaborizm ranks and brought great life to our maker/entrepreneurial community. Check out his NodeBot and other contributions on the platform and be amazed. Thank you Harsha for your hard work and guidance! <span class='md-hashtag-adhoc'>#make</span> <span class='md-hashtag-adhoc'>#collaborizm</span> <span class='md-hashtag-adhoc'>#collaborate</span> <span class='md-hashtag-adhoc'>#drones</span> <span class='md-hashtag-adhoc'>#makersmovement</span> <span class='md-hashtag-adhoc'>#makeordie</span> <span class='md-hashtag-adhoc'>#Innovator</span> <span class='md-hashtag-adhoc'>#nodejs</span> <span class='md-hashtag-adhoc'>#india</span> <span class='md-hashtag-adhoc'>#incubate</span> <span class='md-hashtag-adhoc'>#universe</span> <span class='md-hashtag-adhoc'>#earth</span> <span class='md-hashtag-adhoc'>#connectivity</span> <span class='md-hashtag-adhoc'>#build</span> <span class='md-hashtag-adhoc'>#art</span> <span class='md-hashtag-adhoc'>#science</span> <span class='md-hashtag-adhoc'>#math</span> <span class='md-hashtag-adhoc'>#mongodb</span> <span class='md-hashtag-adhoc'>#raspberrypi3</span></p>
+<p><div>
+    <img class="md-img" src='https://res.cloudinary.com/collabizm/image/upload//v1/from_markdown/si0xgbt4dex1h1xsjk79' />
+  </div></p>
+]]></description><link>https://alvaharsha.me/blog/user-of-the-week-harsha-alva/</link><guid isPermaLink="true">https://alvaharsha.me/blog/user-of-the-week-harsha-alva/</guid><pubDate>Fri, 07 Apr 2017 16:49:59 GMT</pubDate></item><item><title><![CDATA[How to Earn Contributions on Collaborizm]]></title><description><![CDATA[<h1>What is a Contribution?</h1>
+<p><strong>A Collaborizm Contribution is a peer to peer review written by another user in the community testifying to a specific piece of help or effort you made to another project or person.</strong></p>
+<p><div>
+    <img class="md-img" src='https://res.cloudinary.com/collabizm/image/upload//v1/from_markdown/lriudowioo5f2the24se' />
+  </div></p>
+<h2>For Example</h2>
+<p>I personally helped <span class='md-at-person'><a target=_blank href="https://www.collaborizm.com/profile/4JqFRBfbW">John Rodrigues</a></span> with the circuit design task on his Project. When John saw this effort, he awarded me a Contribution, which you can see on my profile. Essentially, it’s a way to say thanks, and give credit to users for helping you in a meaningful way.</p>
+<h1>How to Award a Contribution</h1>
+<p>Click the award contribution button on the bottom middle of any discussion. It’s easy. Make sure to give credit where credit is due.</p>
+<p><div>
+    <img class="md-img" src='https://res.cloudinary.com/collabizm/image/upload//v1/from_markdown/fkxbiiaoo6yhwbrlhwpx' />
+  </div></p>
+<h1>Why Contributions are Gold</h1>
+<p>➡️ Contributions help generate your real life Resume! (These peer to peer reviews form credible additions to your resume, cv, and project portfolio).</p>
+<p>➡️ Contributions users earn are a critical factor for the Collaborizm team when evaluating candidates for the <span class='md-at-project'><a target=_blank href="https://www.collaborizm.com/project/r1XLW_zce">💸 The Collaborizm Innovator Fund 💸</a></span>. (The Collaborizm team always gives priority to top contributors.)</p>
+<h1>The Contribution Showcase</h1>
+<p><div>
+    <img class="md-img" src='https://res.cloudinary.com/collabizm/image/upload//v1/from_markdown/ktl4ejzmufjmcjl2bfpm' />
+  </div></p>
+<p>An awesome feature on Collaborizm is the <a href="/showcase">Contribution Showcase</a>. This is an updated stream of all contributions awarded in the community.</p>
+<p>So start contributing and building your documented resume! 💡 🏆</p>
+]]></description><link>https://alvaharsha.me/blog/how-to-earn-contributions-on-collaborizm/</link><guid isPermaLink="true">https://alvaharsha.me/blog/how-to-earn-contributions-on-collaborizm/</guid><pubDate>Wed, 29 Mar 2017 03:34:25 GMT</pubDate></item><item><title><![CDATA[Electrical Debugging]]></title><description><![CDATA[<p>I have a 220V AC to 5V 2A DC wall adapter which I use with my Raspberry Pi. It was working really well but is having problems now. The output now varies from 4.3V to 4.8V and hence the lights on the Pi blink, but it doesn’t start. Even Android phones don’t detect the output.</p>
+<p>I think this is due to a blown capacitor, but I’m not sure.</p>
+<p>What might be the issue?</p>
+<p>Any help would be appreciated. Thank you. 😃</p>
+<p><span class='md-at-person'><a target=_blank href="https://www.collaborizm.com/profile/V1CArKtkW">Abhi Verma</a></span> <span class='md-at-person'><a target=_blank href="https://www.collaborizm.com/profile/SJne7FcMg">Claran Martis</a></span></p>
+<h2>Edit <span class='md-hashtag-adhoc'>#1</span> 20/3/17</h2>
+<p>The Raspberry Pi is working fine. I want to know if and how the wall adapter could be repaired.</p>
+]]></description><link>https://alvaharsha.me/blog/electrical-debugging/</link><guid isPermaLink="true">https://alvaharsha.me/blog/electrical-debugging/</guid><pubDate>Wed, 29 Mar 2017 03:34:25 GMT</pubDate></item><item><title><![CDATA[Travis CI]]></title><description><![CDATA[<p>What is it and how is it useful for me?</p>
+]]></description><link>https://alvaharsha.me/blog/travis-ci/</link><guid isPermaLink="true">https://alvaharsha.me/blog/travis-ci/</guid><pubDate>Sun, 19 Mar 2017 19:34:38 GMT</pubDate></item><item><title><![CDATA[Make In India]]></title><description><![CDATA[<p><a target=_blank href="http://www.makeinindia.com/home">http://www.makeinindia.com/home</a></p>
+]]></description><link>https://alvaharsha.me/blog/make-in-india/</link><guid isPermaLink="true">https://alvaharsha.me/blog/make-in-india/</guid><pubDate>Thu, 09 Mar 2017 15:36:08 GMT</pubDate></item><item><title><![CDATA[Raspberry Pi Camera Module alternative]]></title><description><![CDATA[<p>Interfaced Logitech C170 webcam successfully with Raspberry Pi 2.<br>
+Fake camera modules are costlier than this webcam.</p>
+<p><strong>mjpg_streamer</strong><br>
+<img src="https://i.snag.gy/hADsf9.jpg" alt="HTTP stream"></p>
+<p> </p>
+<p><strong>guvcview</strong><br>
+<img src="https://i.snag.gy/6oF3bz.jpg" alt="HTTP stream"></p>
+<p> </p>
+<p>Link: <a target=_blank href="http://www.amazon.in/Logitech-960-000880-C170-Webcam/dp/B007VCM62U/ref=sr_1_1">http://www.amazon.in/Logitech-960-000880-C170-Webcam/dp/B007VCM62U/ref=sr_1_1</a></p>
+<p><span class='md-hashtag-adhoc'>#raspberrypi</span></p>
+]]></description><link>https://alvaharsha.me/blog/raspberry-pi-camera-module-alternative/</link><guid isPermaLink="true">https://alvaharsha.me/blog/raspberry-pi-camera-module-alternative/</guid><pubDate>Sat, 04 Feb 2017 11:14:23 GMT</pubDate></item><item><title><![CDATA[Hello World]]></title><description><![CDATA[<p>This is the first post!</p>
+<p>Code is highlighted by default.</p>
+<pre class="language-js"><code class="language-js"><span class="token keyword">const</span> StatelessComponent <span class="token operator">=</span> <span class="token punctuation">(</span>props<span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">></span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> <span class="token punctuation">(</span>
+    <span class="token operator">&lt;</span>div<span class="token operator">></span>
+      I'm a stateless component that accepts children
+      <span class="token punctuation">{</span> props<span class="token punctuation">.</span>children <span class="token punctuation">}</span>
+    <span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">></span>
+  <span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment" spellcheck="true">// ...</span>
+
+  <span class="token keyword">return</span> <span class="token punctuation">(</span>
+    <span class="token operator">&lt;</span>StatelessComponent<span class="token operator">></span>
+      Example <span class="token keyword">of</span> child
+    <span class="token operator">&lt;</span><span class="token operator">/</span>StatelessComponent<span class="token operator">></span>
+  <span class="token punctuation">)</span>
+</code></pre>
+]]></description><link>https://alvaharsha.me/blog/hello-world/</link><guid isPermaLink="true">https://alvaharsha.me/blog/hello-world/</guid><pubDate>Sun, 22 May 2016 00:00:00 GMT</pubDate></item></channel></rss>
